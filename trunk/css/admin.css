@@ -1,0 +1,876 @@
+/*
+
+DEFAULT CSS
+****************************************************************************************************************************************
+
+Index
+-----
+
+Global
+Common
+Icons
+Basic List
+	Header rows
+	Header cells
+	Rows
+	Cells
+	Cell links
+Forms
+	Form List
+		Header rows
+		Header cells
+		Rows
+		Cells
+	Inputs
+	Legend
+	Itemid
+	Submits
+
+
+*/ 
+ 
+
+/* Global
+------------------------------------------------------------------------------------ */
+
+* {
+	-moz-box-sizing: border-box;  
+	-webkit-box-sizing: border-box;  
+	box-sizing: border-box;
+}
+
+body {
+}
+
+body, button, textarea, input, select {
+	font: 12px/1.5em Arial, sans-serif;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.5em;
+	font-weight: normal;
+	display: block;
+	text-transform: capitalize;
+}
+
+h1 {
+	font-size: 3em;
+	letter-spacing: -2px;
+}
+	
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1.1em;
+}
+
+ul, ol {
+	margin: 10px 0;
+	padding: 0 20px;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+dt {
+  font-weight: bold;
+  color: #1980AF;	
+}
+
+dd {
+  padding-left: 20px;
+}
+
+code {
+  	margin: 3px 0;
+  	padding: 20px;
+  	text-align: left;
+  	display: block;
+  	overflow: auto;
+  	font: 500 1em/1.5em 'Lucida Console', 'Courier New', Monospace;
+  	border: 1px solid #F0F0F0;
+	background: #F8F8F8;
+	color: #555;
+}
+
+acronym {
+	cursor: help;
+  	border-bottom: 1px dotted #777;
+}
+
+blockquote {
+  	margin: 10px 0px;
+  	padding: 10px 20px 10px 32px;
+  	border: 1px solid #F0F0F0;
+  	font-weight: normal;
+  	font-size: 17px;
+  	line-height: 1.5em;
+  	font-style: italic;
+  	font-family: Georgia, 'Times New Roman', Times, Serif;
+  	color: #555;
+}
+
+strong {
+	font-weight: bold;
+}
+
+label {
+	text-transform: capitalize;
+}
+
+/* Commmon
+------------------------------------------------------------------------------------ */
+
+.clear  {
+	clear: both;
+}
+
+.left {
+	float: left !important;
+}
+
+.right {
+	float: right !important;
+}
+
+.hide {
+	display: none;
+}
+
+.invisible {
+	opacity: 0;
+}
+
+.space {
+	height: 1em !important;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.table {
+	display: table;
+	width: 100%;
+}
+
+.cell {
+	display: table-cell;
+}
+
+.row {
+	display: table-row;
+}
+
+.page-curl {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.page-curl:after {
+	z-index: -1;
+	position: absolute;
+	background: transparent;
+	width: 48%;
+	height: 20px;
+	content: '';
+	right: 10px;
+	bottom: 10px;
+	-moz-transform: skew(15deg) rotate(1deg);
+	-moz-box-shadow: -15px 20px 15px rgba(0, 0, 0, 0.5);
+}
+
+.page-curl:before {
+	z-index: -2;
+	position: absolute;
+	background: transparent;
+	width: 48%;
+	height: 20px;
+	content: '';
+	left: 10px;
+	bottom: 10px;
+	-moz-transform: skew(-15deg) rotate(-1deg);
+	-moz-box-shadow: 15px 20px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Layout
+------------------------------------------------------------------------------------ */
+
+/* Main */
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* Tabs */
+
+ul.tabs {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+ul.tabs li {
+    display: inline-block;
+}
+
+ul.tabs li a {
+    padding: 0.6em 1.5em;
+    display: block;
+}
+
+/* List */
+
+ul.list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: table;
+	width: 100%;
+}
+
+ul.list li {
+	display: table-row;
+}
+
+ul.list li:hover {
+}
+
+ul.list li:hover .invisible {
+	opacity: 1;
+}
+
+ul.list li p {
+	vertical-align: top;
+    display: table-cell;
+	padding: 4px 5px;
+}
+
+/* Forms */
+
+form input[type="text"], form input[type="password"], form textarea, form select {
+	padding: 3px;
+	-moz-border-radius: 3px;
+}
+
+
+
+
+
+
+
+/* App Dark
+==================================================================================== */
+
+/* Global
+------------------------------------------------------------------------------------ */
+
+.app-dark {
+	background: #3F3F3F;
+}
+
+.app-dark h1, .app-dark h2, .app-dark h3 {
+    color: white;
+    text-shadow: 0 2px 1px black;
+}
+
+.app-dark pre {
+background: white;
+}
+
+.app-dark a {
+	color: #e9b700;
+}
+
+.app-dark a:hover {
+	color: #e99400;
+}
+
+/* Icons
+------------------------------------------------------------------------------------ */
+
+/* Actions */
+
+.app-dark .actions {
+	text-shadow: none;
+}
+
+.app-dark .actions a span.icon {
+	background-image: url(/css/smoothness/images/ui-icons_e9b700_256x240.png);
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+	margin-right: 3px;
+}
+
+.app-dark .actions a:hover span.icon {
+	background-image: url(/css/smoothness/images/ui-icons_e99400_256x240.png);
+}
+
+/* Generic List
+------------------------------------------------------------------------------------ */
+
+.app-dark ul.list {
+	color: #FFF;
+	text-shadow: 1px 1px 1px black;
+	border: 1px solid #222;
+	border-bottom: none;
+	border-top: none;
+}
+
+/* Header rows */
+
+.app-dark ul.list li.th {
+    background-color: #222 !important;
+}
+
+.app-dark ul.list li.th p {
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #111;
+	text-transform: capitalize;
+}
+
+/* Header cells */
+
+.app-dark ul.list li.th p:first-child {
+	border-left: none;
+}
+
+.app-dark ul.list li.th p:last-child {
+	border-right: none;
+}
+
+/* Rows */
+
+.app-dark ul.list li.td:nth-child(odd) {
+	background-color: #555555;
+}
+
+.app-dark ul.list li.td:nth-child(even) {
+	background-color: #3f3f3f;
+}
+
+.app-dark ul.list li.td:last-child p {
+	//border-bottom: 1px solid #eee;
+}
+
+/* Cells */
+
+.app-dark ul.list li.td p {
+	border-top: 1px solid #646464;
+	border-bottom: 1px solid #2e2e2e;
+}
+
+.app-dark ul.list li.td p:last-child {
+	text-align: right;
+}
+
+/* Cell links */
+
+.app-dark ul.list li.td p a {
+	color: white;
+	display: block;
+}
+
+.app-dark ul.list li.td:hover p a {
+	color: #e9b700;
+}
+
+.app-dark ul.list li.td p .actions a {
+	display: inline-block;
+}
+
+.app-dark ul.list li.td:hover p .actions a:hover {
+	color: #e99400;
+}
+
+
+
+/* Generic Edit
+------------------------------------------------------------------------------------ */
+
+
+/* Legend */
+
+.app-dark .legend, .app-dark .itemid {
+	padding: 0.3em 0.7em;
+	color: #FFF;
+}
+
+.app-dark .legend {
+	background-color: #131313;
+	-moz-border-radius: 5px 5px 0 0;
+	border-top: 1px solid #222;
+	-moz-box-shadow: 0 1px 0px #333 inset;
+	border-bottom: 1px solid black;
+}
+
+/* Itemid */
+
+.app-dark .itemid {
+	background: #222;
+	border-bottom: 1px solid black;
+	text-transform: capitalize;
+	text-shadow: 1px 1px 1px black;
+	-moz-box-shadow: 0 0 4px black inset;
+}
+
+/* Submits */
+
+.app-dark .submits {
+    -moz-border-radius: 0 0 5px 5px;
+    background-color: #131313;
+    border-left: 1px solid #111111;
+    border-right: 1px solid #111111;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+    padding: 10px;
+	-moz-box-shadow: 0 1px 0px #333 inset;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Edit
+------------------------------------------------------------------------------------ */
+
+.app-dark .edit {
+	max-width: 800px;
+}
+
+/* Form list */
+
+	/* Rows */
+
+	.app-dark .edit ul.list li:nth-child(odd) {
+		background-color: #3f3f3f;
+	}
+
+	/* Cells */
+
+	.app-dark .edit ul.list li p {
+		padding: 0.7em 2em 0.7em 1em;
+	}
+
+	.app-dark .edit ul.list li p:last-child {
+		text-align: left;
+	}
+
+/* Inputs */
+
+.app-dark .edit input[type="text"], .app-dark .edit input[type="password"], .app-dark .edit textarea, .app-dark .edit select {
+	width: 100%;
+}
+
+.app-dark .edit input[type="text"], .app-dark .edit input[type="password"], .app-dark .edit textarea, .app-dark .edit select {
+	border: 1px solid grey;
+	border-top: 1px solid #2E2E2E;
+	background: #222;
+	color: grey;
+}
+
+.app-dark .edit input[type="text"]:hover, .app-dark .edit input[type="password"]:hover, .app-dark .edit textarea:hover, .app-dark .edit select:hover {
+	color: white;
+}
+
+.app-dark .edit input[type="text"]:focus, .app-dark .edit input[type="password"]:focus, .app-dark .edit textarea:focus, .app-dark .edit select:focus {
+	border: 1px solid orange;
+	color: white;
+}
+
+.app-dark .edit input.short {
+	width: 8em;
+}
+
+
+
+
+
+
+
+/* Header */
+
+.app-dark header {
+	background: #222;
+}
+
+.app-dark .logo {
+    padding-bottom: 0.5em;
+    background: url(/admin/images/textures/perforated.gif);
+	border-bottom: 1px solid black;
+}
+
+.app-dark .logo h1 {
+	font-size: 4em;
+	font-family: 'Lobster', sans-serif;
+	display: inline-block;
+	background: url("/admin/images/icons/common/logo.png") no-repeat center left;
+	padding: 5px 0 5px 70px;
+}
+
+/* Menu */
+
+.app-dark .menu {
+	background: #111111; /* old browsers */
+	background: -moz-linear-gradient(top, #111111 0%, #111111 92%, #000000 93%, #646464 94%, #3F3F3F 95%, #3F3F3F 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#111111), color-stop(92%,#111111), color-stop(93%,#000000), color-stop(94%,#646464), color-stop(95%,#3F3F3F), color-stop(100%,#3F3F3F)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#3F3F3F',GradientType=0 ); /* ie */
+}
+
+.app-dark .menu ul.tabs li a {
+    color: white;
+	outline: none;
+}
+
+.app-dark .menu ul.tabs li a {
+    margin-top: 0.5em;
+	padding-bottom: 1em;
+}
+
+.app-dark .menu ul.tabs li a.active {
+    -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
+    background: #111111;
+	border-bottom: 1px solid #0b0b0b;
+}
+
+
+/* Login */
+
+.app-dark .login {
+    background: #3F3f3f;
+	-moz-border-radius: 5px;
+	-moz-box-shadow: 0 0 20px black;
+}
+
+
+
+
+
+
+
+
+
+/*
+ * App Classic
+ ==============================================================================================================
+ */
+
+
+/* Global style */
+
+.app-classic {
+	background: url(/admin/images/textures/grain.png) #EEE;
+	color: black;
+}
+
+.app-classic h1 {
+	color: white;
+}
+
+.app-classic h1, .app-classic h2, .app-classic h3 {
+	text-shadow: 0 1px 0 white;
+} 
+
+/* Icons */
+
+.app-classic .actions a span.icon {
+	background-image: url(/css/smoothness/images/ui-icons_222222_256x240.png);
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+	margin-right: 3px;
+}
+
+.app-classic .actions a:hover span.icon {
+	background-image: url(/css/smoothness/images/ui-icons_3b5998_256x240.png);
+}
+
+
+/* List */
+
+.app-classic ul.list {
+	padding: 0.5em 1em;
+	background: white;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+}
+
+.app-classic ul.list li.th {
+	font-weight: bold;
+}
+
+.app-classic ul.list li p {
+	border-bottom: 1px solid #CCC;
+}
+
+.app-classic ul.list li:nth-child(even) {
+	background: #EEE; /* old browsers */
+	background: -moz-linear-gradient(top, #FFFFFF 2%, #E0E0E0 3%, #EEE 99%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#FFFFFF), color-stop(3%,#E0E0E0), color-stop(99%,#EEE)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E0E0E0', endColorstr='#EEE',GradientType=0 ); /* ie */
+}
+
+.app-classic ul.list li:nth-child(odd) {
+	background-color: #FFF;
+}
+
+.app-classic ul.list li.td p a {
+	display: block;
+	color: #222;
+}
+
+.app-classic ul.list li.td p .actions a {
+	display: inline-block;
+}
+
+.app-classic ul.list li.td p .actions a:hover {
+	color: #3B5998;
+}
+
+.app-classic ul.list li p:last-child {
+	text-align: right;
+	padding-right: 1em;
+}
+
+
+/* Forms */
+
+
+.app-classic .edit {
+	max-width: 800px;
+}
+
+
+.app-classic .edit ul.list li p {
+	padding: 0.7em 0em 0.7em 1em;
+}
+
+.app-classic .edit ul.list li p {
+    border-bottom: 1px solid #EEE;
+}
+
+.app-classic .edit ul.list li:last-child p {
+    border: none;
+}
+
+.app-classic .edit ul.list li:nth-child(even) {
+    background: none;
+}
+
+.app-classic .edit ul.list li p:last-child {
+	text-align: left;
+    padding-left: 2.5em;
+}
+
+.app-classic .edit ul.list li p:first-child {
+	text-align: right;
+    color: #666;
+}
+
+/* Legend, Itemid, Submits */
+
+.app-classic .legend {
+	border: 1px solid #CCC;
+	padding: 0.3em 1em;
+	-moz-border-radius: 5px 5px 0 0;
+	background: #EEE; /* old browsers */
+	background: -moz-linear-gradient(top, #E0E0E0 0%, #EEE 99%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E0E0E0), color-stop(99%,#EEE)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E0E0E0', endColorstr='#EEE',GradientType=0 ); /* ie */
+	-moz-box-shadow: 0 1px 0 white inset;
+}
+
+.app-classic .submits {
+	border: 1px solid #CCC;
+	border-top: none;
+	-moz-border-radius: 0 0 5px 5px;
+	padding: 1em;
+	background: #ffffff; /* old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* ie */	
+}
+
+.app-classic .edit .submits {
+	border-top: 1px solid #DDD;
+}
+
+
+.app-classic .itemid {
+	background: #DDD;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #EEE #CCC #CCC;
+	padding: 0.5em 1em;
+}
+
+
+
+
+
+
+
+
+
+/* Menu */
+
+.app-classic header {
+	background: #621244;
+	background: url(/admin/images/textures/bokeh.png) #3C4C5C;
+}
+
+.app-classic .logo {
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+
+}
+
+.app-classic .logo h1 {
+	font-size: 4em;
+	font-family: 'Lobster', sans-serif;
+	display: inline-block;
+	background: url("/admin/images/icons/common/logo.png") no-repeat center left;
+	padding: 5px 0 5px 70px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.app-classic .menu {
+    border-top: 1px solid rgba(255,255,255,0.2);
+	background: rgba(0,0,0,0.1);
+}
+
+.app-classic .menu ul.tabs li a {
+    outline: none;
+    margin-top: 0.8em;
+    -moz-border-radius: 5px 5px 0 0;
+	padding: 0.5em 1.5em;
+	color: white;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+}
+
+.app-classic .menu ul.tabs li a:hover {
+	background: rgba(255,255,255,0.2);
+}
+
+.app-classic .menu ul.tabs li a.active {
+    background: url(/admin/images/textures/grain.png) #EEE;
+	color: black;
+	text-shadow: 1px 1px 0px white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.logged {
+	padding-top: 1.5em;
+}
+
+.login {
+    left: 50%;
+    margin-left: -150px;
+	margin-top: -75px;
+    position: absolute;
+    top: 50%;
+    width: 300px;
+	z-index: 1000;
+	-moz-box-shadow: 0 0 20px black;
+}
+
+.login .error {
+	color: #FF0000;
+	margin: 15px;
+	text-align: center;
+	width: 300px;
+}
+
+.login-back {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('/admin/images/login.jpg') center;
+}
+
+.app-dark .logged {
+	color: white;
+}
+
+.app-classic .logged {
+	color: rgba(255,255,255, 0.5);
+}
+
+.app-classic .logged a {
+	color: white;
+	font-weight: bold;
+}
+
+
+.window {
+position: absolute;
+width: 98%;
+top: 40px;
+left: 1%;
+height: 84%;
+overflow-y: scroll;
+}
+.titlebar {
+position: absolute;
+top: 10px;
+height: 30px;
+background: rgba(0,0,0,0.1);
+width: 98%;
+left: 1%;
+-moz-border-radius: 5px 5px 0 0;
+-moz-box-shadow: 0 5px 10px rgba(255,255,255,0.5) inset;
+}
+.app-dark .window {
+background: #3F3F3F;
+}
+.app-classic .window {
+background: url(/images/textures/grain.png) #EEE;
+}
+
+.console {
+position: fixed;
+bottom: 0;
+width: 100%;
+padding: 0.5em;
+background: rgba(0,0,0,0.4);
+}
+
+footer {
+padding-bottom: 5em;
+}
