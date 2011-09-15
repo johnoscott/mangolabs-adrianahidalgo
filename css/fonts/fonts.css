@@ -1,0 +1,42 @@
+
+/* FONT KITS
+--------------------------------------------------------------- */
+
+/* Segoe UI */
+
+/*
+@font-face {
+    font-family: 'Chalet';
+    src: url('/css/fonts/chalet/chalet-newyorknineteensixty.eot');
+    src: local('Chalet'), 
+    local('Chalet'), 
+                url('/css/fonts/chalet/chalet-newyorknineteensixty.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+*/
+
+@font-face {
+    font-family: 'ChaletNewYork';
+    src: url('/css/fonts/chaletnewyork/chalet-newyorknineteensixty-webfont.eot');
+    src: url('/css/fonts/chaletnewyork/chalet-newyorknineteensixty-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/chaletnewyork/chalet-newyorknineteensixty-webfont.woff') format('woff'),
+         url('/css/fonts/chaletnewyork/chalet-newyorknineteensixty-webfont.ttf') format('truetype'),
+         url('/css/fonts/chaletnewyork/chalet-newyorknineteensixty-webfont.svg#ChaletRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ChaletParis';
+    src: url('/css/fonts/ChaletParis/chalet-parisnineteensixty-webfont.eot');
+    src: url('/css/fonts/ChaletParis/chalet-parisnineteensixty-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/ChaletParis/chalet-parisnineteensixty-webfont.woff') format('woff'),
+         url('/css/fonts/ChaletParis/chalet-parisnineteensixty-webfont.ttf') format('truetype'),
+         url('/css/fonts/ChaletParis/chalet-parisnineteensixty-webfont.svg#ChaletRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
