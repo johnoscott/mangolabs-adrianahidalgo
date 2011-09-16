@@ -61,7 +61,7 @@
 	
 </head>
 
-<body class="app-dark">
+<body class="app-classic">
 
 	<!--<div class="login-back"></div>
 
