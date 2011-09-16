@@ -1,0 +1,41 @@
+
+# Seteo la home
+DirectoryIndex home.php
+
+RewriteEngine on
+RewriteBase /
+
+###############################################################
+######################### MINIFIER  ###########################
+###############################################################
+
+Rewriterule ^minify\.(js|css).*$ /minify.php?type=$1&%{QUERY_STRING}
+#Rewriterule ^minify\.js.*$ /minify.php?type=js&%{QUERY_STRING}
+#Rewriterule ^minify\.css.*$ /minify.php?type=css&%{QUERY_STRING}
+
+###############################################################
+############################ AJAX #############################
+###############################################################
+
+# Ajax para Objetos (sin jsonear) -> /php/class/[CLASS_NAME]/[FUNCTION_NAME]/[PARAMS]
+Rewriterule ^(php|ajax|xml)/class/([^/]+)/([^/]+)/?(.*?)?/@redir=(.*)$ /ajax.php?type=$1&class=$2&f=$3&params=$4&redir=$5&%{QUERY_STRING}
+Rewriterule ^(php|ajax|xml)/class/([^/]+)/([^/]+)/?(.*)?$ /ajax.php?type=$1&class=$2&f=$3&params=$4&%{QUERY_STRING}
+
+
+
+###############################################################
+######################### ADMIN ###############################
+###############################################################
+
+# Login -> /admin/login/
+Rewriterule ^admin\/?$ /admin/index.php
+
+# Login -> /admin/logout/
+Rewriterule ^admin/logout\/?$ /admin/logout.php
+
+# Home -> /admin/home/
+Rewriterule ^admin/home\/?$ /admin/home.php
+# Home Agregar -> /admin/home/agregar/
+Rewriterule ^admin/home/agregar\/?$ /admin/home_abm.php
+# Home Modificar -> /admin/home/modificar/[ID_HOME]
+Rewriterule ^admin/home/modificar/([0-9]+)\/?$ /admin/home_abm.php?id=$1
