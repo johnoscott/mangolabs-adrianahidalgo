@@ -65,7 +65,7 @@ if ($usuario->logged()) {
 	
 </head>
 
-<body class="app-classic">
+<body class="app-dark">
 	
 	<div class="login-back"></div>
 	<div class="login">
