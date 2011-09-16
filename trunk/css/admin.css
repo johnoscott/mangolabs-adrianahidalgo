@@ -46,6 +46,10 @@ body, button, textarea, input, select {
 	font: 12px/1.5em Arial, sans-serif;
 }
 
+textarea {
+	height: 400px;
+}
+
 a:link, a:visited {
 	text-decoration: none;
 }

@@ -1,9 +1,28 @@
 <?  include('../includes/loader.inc.php'); 
 
+	if (!$Usuario->logged()) {
+		header("Location: /admin"); exit;
+	}
+
 	$config = array (
-		'title' 	=> 'Productos',
-		'modulo' 	=> 'home',
+		'title' 	=> 'Autores',
+		'modulo' 	=> 'autores',
 	);
+
+	// Almaceno la url del listado de este modulo para redireccionar despues del abm
+	$Session->set($config['modulo'].'_listado', $_SERVER['REQUEST_URI']);
+
+	$data['titles'] = array('Codigo', 'Nombre');
+
+	// Borro el registro
+	if ($_GET['delete'])
+		$db->query("DELETE FROM autores WHERE id_autor = '".addslashes($_GET['delete'])."'");
+
+	// Obtengo el listado
+	if ($listado = $db->get_results("SELECT id_autor, nombre FROM autores WHERE 1=1 ORDER BY nombre"))
+		foreach ($listado as $l)
+			$data['listado'][$l['id_autor']] = $l;
+
 
 ?>
 <!DOCTYPE html>
@@ -106,7 +125,7 @@
 								<? endforeach; ?>
 							
 								<!-- Search -->
-								<p></p>
+								<p style="width: 150px;">Acciones</p>
 							
 							</li>
 							
@@ -136,11 +155,8 @@
 									<!-- Direct Actions -->
 									<p>
 										<span class="invisible actions">
-											<? foreach($data['actions'] as $key_action => $value_action): ?>
-												<a href="/admin/<?=$value_action['link']?>/key:<?=$key_item?>"><span class="icon ui-icon-triangle-1-e"></span><?=$value_action['name']?></a>
-											<? endforeach; ?>
-												<a href="/admin/<?=$config['module']?>/modificar/<?=$key_item?>"><span class="icon ui-icon-wrench"></span>Modificar</a>
-												<a onClick="return confirm('Estas seguro que queres borrar el registro?');" href="/admin/<?=$config['modulo']?>/delete/<?=$key_item?>"><span class="icon ui-icon-trash"></span>Borrar</a>
+												<a href="/admin/<?=$config['modulo']?>/modificar/<?=$key_item?>"><span class="icon ui-icon-wrench"></span>Modificar</a>
+												<a onClick="return confirm('Estas seguro que queres borrar el registro?');" href="/admin/<?=$config['modulo']?>/?delete=<?=$key_item?>"><span class="icon ui-icon-trash"></span>Borrar</a>
 										</span>
 									</p>
 								
