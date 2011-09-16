@@ -22,6 +22,30 @@ Rewriterule ^(php|ajax|xml)/class/([^/]+)/([^/]+)/?(.*?)?/@redir=(.*)$ /ajax.php
 Rewriterule ^(php|ajax|xml)/class/([^/]+)/([^/]+)/?(.*)?$ /ajax.php?type=$1&class=$2&f=$3&params=$4&%{QUERY_STRING}
 
 
+###############################################################
+######################### SITIO ###############################
+###############################################################
+
+#### ESPECIAL
+
+# Caso Short URL -> /caso/[ID]
+Rewriterule ^web/libro/([0-9]+)/?$ /home.php?tab=catalogo&id=$1&short=detalle
+
+# Caso Short URL -> /caso/[ID]
+Rewriterule ^web/destacado/([0-9]+)/?$ /home.php?tab=catalogo&id=$1&short=detalle&destacado=1
+
+
+#### GENERAL
+
+# Ir a una tab y seccion determinada con filtros -> /[TAB]/[SECTION]/
+Rewriterule ^web/([a-z0-9]+)/([a-z0-9]+)/?(.*?)$ /home.php?tab=$1&section=$2&ht=1&params=$3%{QUERY_STRING}
+
+# Ir a una tab determinada -> /[TAB]/
+Rewriterule ^web/([a-z0-9]+)/?$ /home.php?tab=$1&ht=2%{QUERY_STRING}
+
+# Inicio
+Rewriterule ^web/?$ /home.php
+
 
 ###############################################################
 ######################### ADMIN ###############################
@@ -29,13 +53,47 @@ Rewriterule ^(php|ajax|xml)/class/([^/]+)/([^/]+)/?(.*)?$ /ajax.php?type=$1&clas
 
 # Login -> /admin/login/
 Rewriterule ^admin\/?$ /admin/index.php
-
 # Login -> /admin/logout/
 Rewriterule ^admin/logout\/?$ /admin/logout.php
 
-# Home -> /admin/home/
-Rewriterule ^admin/home\/?$ /admin/home.php
-# Home Agregar -> /admin/home/agregar/
-Rewriterule ^admin/home/agregar\/?$ /admin/home_abm.php
-# Home Modificar -> /admin/home/modificar/[ID_HOME]
-Rewriterule ^admin/home/modificar/([0-9]+)\/?$ /admin/home_abm.php?id=$1
+# Autores -> /admin/autores/
+Rewriterule ^admin/autores\/?$ /admin/autores.php
+# Autores Agregar -> /admin/autores/agregar/
+Rewriterule ^admin/autores/agregar\/?$ /admin/autores_abm.php
+# Autores Modificar -> /admin/autores/modificar/[ID_HOME]
+Rewriterule ^admin/autores/modificar/([0-9]+)\/?$ /admin/autores_abm.php?id=$1
+
+# Colecciones -> /admin/colecciones/
+Rewriterule ^admin/colecciones\/?$ /admin/colecciones.php
+# Colecciones Agregar -> /admin/colecciones/agregar/
+Rewriterule ^admin/colecciones/agregar\/?$ /admin/colecciones_abm.php
+# Colecciones Modificar -> /admin/colecciones/modificar/[ID_HOME]
+Rewriterule ^admin/colecciones/modificar/([0-9]+)\/?$ /admin/colecciones_abm.php?id=$1
+
+# Libros -> /admin/libros/
+Rewriterule ^admin/libros\/?$ /admin/libros.php
+# Libros Agregar -> /admin/libros/agregar/
+Rewriterule ^admin/libros/agregar\/?$ /admin/libros_abm.php
+# Libros Modificar -> /admin/libros/modificar/[ID_HOME]
+Rewriterule ^admin/libros/modificar/([0-9]+)\/?$ /admin/libros_abm.php?id=$1
+
+# Prensa -> /admin/prensa/
+Rewriterule ^admin/prensa\/?$ /admin/prensa.php
+# Prensa Agregar -> /admin/prensa/agregar/
+Rewriterule ^admin/prensa/agregar\/?$ /admin/prensa_abm.php
+# Prensa Modificar -> /admin/prensa/modificar/[ID_HOME]
+Rewriterule ^admin/prensa/modificar/([0-9]+)\/?$ /admin/prensa_abm.php?id=$1
+
+# Generos -> /admin/generos/
+Rewriterule ^admin/generos\/?$ /admin/generos.php
+# Generos Agregar -> /admin/generos/agregar/
+Rewriterule ^admin/generos/agregar\/?$ /admin/generos_abm.php
+# Generos Modificar -> /admin/generos/modificar/[ID_HOME]
+Rewriterule ^admin/generos/modificar/([0-9]+)\/?$ /admin/generos_abm.php?id=$1
+
+# Novedades -> /admin/novedades/
+Rewriterule ^admin/novedades\/?$ /admin/novedades.php
+# Novedades Agregar -> /admin/novedades/agregar/
+Rewriterule ^admin/novedades/agregar\/?$ /admin/novedades_abm.php
+# Novedades Modificar -> /admin/novedades/modificar/[ID_HOME]
+Rewriterule ^admin/novedades/modificar/([0-9]+)\/?$ /admin/novedades_abm.php?id=$1

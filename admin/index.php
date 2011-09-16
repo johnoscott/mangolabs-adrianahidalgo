@@ -8,7 +8,7 @@ $usuario = new Usuario();
 $error = '';
 
 if (!$_SERVER["HTTP_REFERER"] || (str_replace(CONFIG_SITE_URL, '/', $_SERVER["HTTP_REFERER"]) == $_SERVER["REQUEST_URI"]) )
-	$_SERVER["HTTP_REFERER"] = '/admin/home/';
+	$_SERVER["HTTP_REFERER"] = '/admin/autores/';
 
 if (!empty($_POST)) {
 

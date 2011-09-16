@@ -25,12 +25,15 @@ $Session = Session::getInstance();
 // Defino algunas configuraciones para el admin
 $admin = array (
 	'secciones' => array ( 
-		'autores' 		=> '/admin/home/',
+		'autores' 		=> '/admin/autores/',
 		'colecciones' 	=> '/admin/colecciones/',
 		'libros' 		=> '/admin/libros/',
+		'prensa' 		=> '/admin/prensa/',
 		'generos' 		=> '/admin/generos/',
 		'novedades' 	=> '/admin/novedades/',
 	),
 );
+
+$Usuario = Usuario::getInstance();
 
 ?>
