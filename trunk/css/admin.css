@@ -667,6 +667,13 @@ background: white;
 /* Forms */
 
 
+.app-classic form input[type="text"],
+.app-classic form input[type="password"],
+.app-classic form textarea {
+    border: 1px solid #DDDDDD;
+}
+
+
 .app-classic .edit {
 	max-width: 800px;
 }
