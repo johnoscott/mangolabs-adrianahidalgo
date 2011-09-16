@@ -671,6 +671,7 @@ background: white;
 .app-classic form input[type="password"],
 .app-classic form textarea {
     border: 1px solid #AAA;
+	width: 460px;
 }
 
 .app-classic form textarea {
