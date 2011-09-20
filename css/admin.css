@@ -616,6 +616,10 @@ background: white;
 	background-image: url(/css/smoothness/images/ui-icons_3b5998_256x240.png);
 }
 
+.app-classic .login .list input {
+	width: 160px;
+}
+
 
 /* List */
 
@@ -825,6 +829,9 @@ background: white;
     width: 300px;
 	z-index: 1000;
 	-moz-box-shadow: 0 0 20px black;
+}
+.login input {
+	width: 160px;
 }
 
 .login .error {
