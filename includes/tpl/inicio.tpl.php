@@ -3,9 +3,9 @@
 		<li>
 			<a href="/web/destacado/42/">
 				<img class="front" src="/img/tapas/cover01.jpg">
-				<p class="author"><?=$value_books['author']?></p>
-				<p class="title"><?=$value_books['title']?></p>
-				<p class="price">$ <?=$value_books['price']?> .-</p>
+				<p class="author"><?=$value_books['autor']?></p>
+				<p class="title"><?=$value_books['titulo']?></p>
+				<p class="price">$ <?=$value_books['precio']?> .-</p>
 			</a>
 		</li>
 	<? endforeach; ?>
