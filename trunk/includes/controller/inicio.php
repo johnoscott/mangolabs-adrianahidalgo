@@ -11,6 +11,8 @@ $books = array(
 	array('title' => 'The Plague', 'author' => 'Albert Camus', 'year' => '1947', 'comment' => 'A great novel', 'rating' => '3', 'price' => 79)
 );
 
+$Libros = new Libros();
+$books = $Libros->listar(array('filtros' => array("l.home = '1'")));
 
 /* Incluyo la interfaz
 *************************************************************/

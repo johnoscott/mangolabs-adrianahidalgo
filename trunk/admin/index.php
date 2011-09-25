@@ -75,7 +75,7 @@ if ($usuario->logged()) {
 				<li><p><label>User: </label></p><p><input type="text" name="user"></p></li>
 				<li><p><label>Pass: </label></p><p><input type="password" name="pass"></p></li>
 			</ul>
-			<?=($error)? '<p class="error">'.$error.'</p>' : ''?>
+			<?=($error)? '<div class="submits"><p class="error">'.$error.'</p></div>' : ''?>
 			<div class="submits"><input class="button" type="submit" value="Ingresar"></div>
 		</form>
 	</div>

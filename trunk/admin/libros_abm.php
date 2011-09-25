@@ -142,6 +142,17 @@
 								<p><input type="text" id="form-subtitulo" name="data[<?=$config['modulo']?>][subtitulo]" value="<?=$row['subtitulo']?>"/></p>
 							</li>
 
+							<!-- select -->
+							<li>
+								<p><label for="form-home">Mostrar en la home</label></p>
+								<p>
+									<select id="form-home" name="data[<?=$config['modulo']?>][home]">
+										<option value="0" <?=($row['home'] == 0)? 'selected="selected"' : '' ?> >no</option>
+										<option value="1" <?=($row['home'] == 1)? 'selected="selected"' : '' ?> >si</option>
+									</select>
+								</p>
+							</li>
+
 							<!-- text -->
 							<li>
 								<p><label for="form-precio">Precio</label></p>

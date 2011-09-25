@@ -15,7 +15,7 @@ $criterios = array(
 		"filtro" => "id_genero = '|param|'"
 	),
 	"titulo" => array(
-		"filtro" => "titulo LIKE '%|param|'"
+		"filtro" => "titulo LIKE '|param|%'"
 	)
 );
 
@@ -46,17 +46,26 @@ if ($_REQUEST['params']) {
 		'filtros' => $filtros
 	);
 	
-	# print_r($opciones);
+	print_r($opciones);
 
-	// Descomentar cuando la funcion exista
-	// $libros = Libros::listar($opciones);
+//	$libros = $books;
 
-	$libros = $books;
-	
 }
 
-
-
+if ($section == 'titulo') {
+	$letras = Libros::letras();
+	$libros = Libros::listar($opciones);
+}
+elseif ($section == 'autor') {
+	$letras = Autores::letras();
+	$autores = Autores::listar($opciones);
+}
+elseif ($section == 'genero') {
+	$generos = Generos::listar($opciones);
+}
+elseif ($section == 'coleccion') {
+	$colecciones = Colecciones::listar($opciones);
+}
 
 /* Incluyo la interfaz
 *************************************************************/

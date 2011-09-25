@@ -51,7 +51,8 @@
 		
 			<!-- Busqueda -->
 		
-			<select data-action="titulo" class="medium">
+			<select data-action="titulo" class="large">
+				<option value="">Seleccionar una letra</option>
 				<? foreach($letras as $letra): ?>
 					<option <? if (strtoupper($letra) == $params['titulo']): ?> selected <? endif; ?> ><?=ucfirst($letra)?></option>
 				<? endforeach; ?>
@@ -76,7 +77,8 @@
 		
 			<!-- Busqueda -->
 		
-				<select data-action="autor" class="medium">
+				<select data-action="autor" class="large">
+					<option value="">Seleccionar una letra</option>
 					<? foreach($letras as $letra): ?><option><?=ucfirst($letra)?></option><? endforeach; ?>
 				</select>
 				<hr>

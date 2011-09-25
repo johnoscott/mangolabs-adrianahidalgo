@@ -3,7 +3,7 @@
 	<? foreach ($libros as $key_libro => $value_libro): ?>
 		<li>
 			<a href="/web/libro/42/">
-				<img class="front" src="/img/tapas/cover01.jpg">
+				<img class="front" src="<?=$value_libro['imagen']?>">
 				<p class="author"><?=$value_libro['autor']?></p>
 				<p class="title"><?=$value_libro['titulo']?></p>
 				<p class="price">$ <?=$value_libro['precio']?>,00 .-</p>
