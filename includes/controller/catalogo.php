@@ -6,66 +6,74 @@
 
 $criterios = array(
 	"coleccion" => array(
-		"filtro" => "id_coleccion = '|param|'"
+		"filtro" => "l.id_coleccion = '|param|'"
 	),
 	"autor" => array(
-		"filtro" => "id_autor = '|param|'"
+		"filtro" => "l.id_autor = '|param|'"
 	),
 	"genero" => array(
-		"filtro" => "id_genero = '|param|'"
+		"filtro" => "l.id_genero = '|param|'"
 	),
 	"titulo" => array(
-		"filtro" => "titulo LIKE '|param|%'"
+		"filtro" => "l.titulo LIKE '|param|%'"
 	)
 );
-
 
 
 /* Recibo los datos
 *************************************************************/
 
 if ($_REQUEST['params']) {
-
-	// Parametros
 	$params = array($section => addslashes($_REQUEST['params']));
-	
-	// Guardo el parametro en sesion
-	$_SESSION['params'] = $params;
-	
-	# print_r($params);
-	
-	// Aplico los filtros
-	foreach ($criterios as $key_criterio => $value_criterio)
-		if ($params[$key_criterio])
-			$filtros[$key_criterio] = str_replace('|param|', $params[$key_criterio], $value_criterio['filtro']);
-
-	// Armo las opciones para la funcion listar
-	$opciones  = array(
-		'rpp' => ($params['items']) ? $params['items'] : 100,
-		'page' => ($params['pagina']) ? $params['pagina'] : 1,
-		'filtros' => $filtros
-	);
-	
-	print_r($opciones);
-
-//	$libros = $books;
-
+	$listar = true;
 }
 
-if ($section == 'titulo') {
-	$letras = Libros::letras();
+
+
+/* Defino las secciones
+*************************************************************/
+
+switch ($section) {
+	case 'titulo':
+		$listar = true;
+		$letras = Libros::letras();
+		$params['titulo'] = ($params['titulo']) ? $params['titulo'] : current($letras);
+		break;
+	case 'autor':
+		$letras = Autores::letras();
+		$params['autor'] = ($params['autor']) ? $params['autor'] : current($letras);
+		$autores = Autores::listar($opciones);
+		break;
+	case 'genero':
+		$generos = Generos::listar();
+		$params['genero'] = ($params['genero']) ? $params['genero'] : current($generos);
+		break;
+	case 'coleccion':
+		$colecciones = Colecciones::listar();
+		$params['coleccion'] = ($params['coleccion']) ? $params['coleccion'] : current($colecciones);
+		break;
+}
+
+
+// Guardo el parametro en sesion
+$_SESSION['params'] = $params;
+
+// Aplico los filtros
+foreach ($criterios as $key_criterio => $value_criterio)
+	if ($params[$key_criterio])
+		$filtros[$key_criterio] = str_replace('|param|', $params[$key_criterio], $value_criterio['filtro']);
+
+// Armo las opciones para la funcion listar
+$opciones  = array(
+	'rpp' => ($params['items']) ? $params['items'] : 100,
+	'page' => ($params['pagina']) ? $params['pagina'] : 1,
+	'filtros' => $filtros
+);
+
+// Obtengo el listado correspondiente
+if ($listar)
 	$libros = Libros::listar($opciones);
-}
-elseif ($section == 'autor') {
-	$letras = Autores::letras();
-	$autores = Autores::listar($opciones);
-}
-elseif ($section == 'genero') {
-	$generos = Generos::listar($opciones);
-}
-elseif ($section == 'coleccion') {
-	$colecciones = Colecciones::listar($opciones);
-}
+
 
 /* Incluyo la interfaz
 *************************************************************/

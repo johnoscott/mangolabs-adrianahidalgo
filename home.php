@@ -54,24 +54,24 @@ $sections = array(
 				'alias' => 'Colecci&oacute;n',
 				'url' => 'catalogo/coleccion/',
 				'control' => 'catalogo.php',
-				'plural' => 'colecciones'
+				'plural' => 'Colecciones'
 			),
 			'titulo' => array(
 				'alias' => 'T&iacute;tulo',
-				'url' => 'catalogo/titulo/a',
+				'url' => 'catalogo/titulo/',
 				'control' => 'catalogo.php',
 			),
 			'autor' => array(
 				'alias' => 'Autor',
 				'url' => 'catalogo/autor/',
 				'control' => 'catalogo.php',
-				'plural' => 'autores'
+				'plural' => 'Autores'
 			),
 			'genero' => array(
 				'alias' => 'G&eacute;nero',
 				'url' => 'catalogo/genero/',
 				'control' => 'catalogo.php',
-				'plural' => 'generos'
+				'plural' => 'Generos'
 			)
 		)		
 	),

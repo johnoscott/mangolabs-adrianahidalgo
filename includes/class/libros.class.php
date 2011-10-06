@@ -67,12 +67,14 @@ class Libros extends Core {
 		$libro = array();
 		
 		// Busco el libro solicitado
-		$libro['libro'] = $this->listar(array('filtros' => array("id_libro = '$id_libro'"), 'rpp' => 1));
+		$datos = $this->listar(array('filtros' => array("l.id_libro = '$id_libro'"), 'rpp' => 1));
+		
+		//$db->debug();
 		
 		// Obtengo las notas de prensa de este libro
-		$libro['prensa'] = $this->prensa($id_libro);
+		$prensa = $this->prensa($id_libro);
 
-		return $libro;
+		return array_merge(current($datos), array('prensa' => $prensa));
 	}
 
 	/**
@@ -141,6 +143,8 @@ class Libros extends Core {
 			foreach ($_libros as $_libro)
 				$libros[$_libro['id_libro']] = $_libro;
 
+		//$db->debug();		
+				
 		return $libros;
 	}
 

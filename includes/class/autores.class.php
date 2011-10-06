@@ -64,7 +64,8 @@ class Autores extends Core {
 		$db = ($this)? $this->db : ez_sql::getInstance();
 
 		// Busco el autor solicitado
-		$autor = $this->listar(array('filtros' => array("id_autor = '$id_autor'"), 'rpp' => 1));
+		$filtros = array('filtros' => array("id_autor = '$id_autor'"), 'rpp' => 1);
+		$autor = ($this)? $this->listar($filtros) : Autores::listar($filtros);
 
 		return $autor;
 	}
@@ -112,8 +113,8 @@ class Autores extends Core {
 		$autores = array();
 		if ($_autores = $db->get_results($query))
 			foreach ($_autores as $_autor)
-				$autores[$_autor['id_autor']] = $_autor;
-
+				$autores[$_autor['id_autor']] = $_autor;	
+				
 		return $autores;
 	}
 

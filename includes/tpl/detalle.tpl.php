@@ -7,9 +7,9 @@
 	
 	
 		<!-- Cabecera -->
-		<? if ($cabecera): ?>
-			<h2 class="selected"><?=$cabecera[0]?></h2>
-			<h5><?=$cabecera[1]?></h5><hr>
+		<? if ($cabeceras): ?>
+			<h2 class="selected"><?=$cabeceras['nombre']?></h2>
+			<h5><?=$cabeceras['descripcion']?></h5><hr>
 		<? endif; ?>
 		
 		
@@ -17,8 +17,8 @@
 		
 		
 		<!-- Tapa del libro -->
-		<div class="cover">
-			<img src="/img/tapas/<?=$libro['imagen']?>"/>
+		<div class="sidebar">
+			<img class="cover" src="/uploads/libros/<?=$libro['imagen']?>"/>
 			<div class="social">
 				<img src="/img/facebook.png"/>
 				<img src="/img/twitter.png"/>
@@ -65,7 +65,8 @@
 			
 			<!-- Tab 2: Autor -->
 			<div id="autor" class="tab hide">
-				Autor
+				<h2 class="selected"><?=$autor['nombre']?></h2>
+				<?=$autor['biografia']?>
 			</div>
 			
 			
