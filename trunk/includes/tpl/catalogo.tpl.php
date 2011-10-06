@@ -17,9 +17,9 @@
 				
 				<ul class="list">
 				
-					<? foreach($colecciones as $key => $coleccion): ?>
+					<? foreach($colecciones as $coleccion): ?>
 					
-						<li><a href="/web/catalogo/coleccion/<?=$key?>"><?=$coleccion['nombre']?></a></li>
+						<li><a href="/web/catalogo/coleccion/<?=$coleccion['id_coleccion']?>"><?=$coleccion['nombre']?></a></li>
 					
 					<? endforeach; ?>
 					
@@ -52,7 +52,6 @@
 			<!-- Busqueda -->
 		
 			<select data-action="titulo" class="large">
-				<option value="">Seleccionar una letra</option>
 				<? foreach($letras as $letra): ?>
 					<option <? if (strtoupper($letra) == $params['titulo']): ?> selected <? endif; ?> ><?=ucfirst($letra)?></option>
 				<? endforeach; ?>
@@ -78,13 +77,12 @@
 			<!-- Busqueda -->
 		
 				<select data-action="autor" class="large">
-					<option value="">Seleccionar una letra</option>
 					<? foreach($letras as $letra): ?><option><?=ucfirst($letra)?></option><? endforeach; ?>
 				</select>
 				<hr>
 				<ul>
 					<? foreach($autores as $key => $autor): ?>
-						<li <? if ($autor['nombre'][0] != 'A'): ?> class="hide" <? endif; ?> data-letra="<?=$autor['nombre'][0]?>"><a href="/web/catalogo/autor/<?=$key?>"><?=$autor['nombre']?></a></li>
+						<li <? if ($autor['nombre'][0] != $params['autor']): ?> class="hide" <? endif; ?> data-letra="<?=$autor['nombre'][0]?>"><a href="/web/catalogo/autor/<?=$key?>"><?=$autor['nombre']?></a></li>
 					<? endforeach; ?>
 				</ul>
 				
@@ -117,9 +115,9 @@
 				
 				<ul class="list">
 				
-					<? foreach($generos as $key => $genero): ?>
+					<? foreach($generos as $genero): ?>
 					
-						<li><a href="/web/catalogo/genero/<?=$key?>"><?=$genero['nombre']?></a></li>
+						<li><a href="/web/catalogo/genero/<?=$genero['id_genero']?>"><?=$genero['nombre']?></a></li>
 					
 					<? endforeach; ?>
 					

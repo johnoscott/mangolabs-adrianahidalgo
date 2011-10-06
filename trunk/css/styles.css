@@ -225,6 +225,7 @@ code, pre {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  text-align: left;
 }
 code {
   background-color: #fee9cc;
@@ -415,6 +416,7 @@ ul.catalog li .title {
 	font-size: 25px;
 	font-family: 'AvenirLTStd95Black';
 	line-height: 25px;
+	width: 90%;
 }
 
 ul.catalog li .price {
@@ -514,14 +516,18 @@ ul.news li .title {
 	font-family: 'AvenirLTStd95Black';
 }
 
-.detail .cover {
+.detail .sidebar {
 	float: left;
 	display: inline;
 	margin: 0 2em 0 0;
 }
 
-.detail .cover img {
+.detail .sidebar img {
 	margin-bottom: 5px;
+}
+
+.detail .sidebar .cover {
+	width: 240px;
 }
 
 .detail .description {

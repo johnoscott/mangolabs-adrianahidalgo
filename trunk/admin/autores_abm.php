@@ -103,6 +103,12 @@
 								<p><label for="form-nombre">Nombre</label></p>
 								<p><input type="text" id="form-nombre" name="data[<?=$config['modulo']?>][nombre]" value="<?=$row['nombre']?>"/></p>
 							</li>
+							
+							<!-- text -->
+							<li>
+								<p><label for="form-nombre">Descripcion</label></p>
+								<p><input type="text" id="form-nombre" name="data[<?=$config['modulo']?>][descripcion]" value="<?=$row['descripcion']?>"/></p>
+							</li>
 
 							<!-- textarea -->
 							<li>

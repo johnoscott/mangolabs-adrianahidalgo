@@ -1,12 +1,12 @@
 <hr>
 <ul class="catalog equal">
-	<? foreach ($libros as $key_libro => $value_libro): ?>
+	<? foreach ($libros as $libro): ?>
 		<li>
-			<a href="/web/libro/42/">
-				<img class="front" src="<?=$value_libro['imagen']?>">
-				<p class="author"><?=$value_libro['autor']?></p>
-				<p class="title"><?=$value_libro['titulo']?></p>
-				<p class="price">$ <?=$value_libro['precio']?>,00 .-</p>
+			<a href="/web/libro/<?=$libro['id_libro']?>/">
+				<img class="front" src="/uploads/libros/<?=$libro['imagen']?>">
+				<p class="author"><?=$libro['autor']?></p>
+				<p class="title"><?=$libro['titulo']?></p>
+				<p class="price">$ <?=$libro['precio']?> .-</p>
 			</a>
 		</li>
 	<? endforeach; ?>
