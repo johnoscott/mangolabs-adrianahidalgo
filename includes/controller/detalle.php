@@ -18,8 +18,13 @@ $section = ($sections['catalogo']['sub'][$section]) ? $section : 'coleccion';
 // Obtengo los parametros
 $params = $_SESSION['params'];
 
-// Obtengo el autor
+// Obtengo los detalles
 $autor = Autores::get($libro['id_autor']);
+$genero = Genero::get($libro['id_genero']);
+$coleccion = Coleccion::get($libro['id_coleccion']);
+$libro['autor'] = current($autor);
+$libro['genero'] = current($genero);
+$libro['coleccion'] = current($coleccion);
 
 // Preparo las cabeceras
 switch ($section) {
@@ -27,14 +32,13 @@ switch ($section) {
 		$cabeceras = $autor;
         break;
     case 'genero':
-        $cabeceras = Generos::listar(array('filtros' => array('id_genero = ' . $params['genero'])));
+        $cabeceras = $genero;
         break;
     case 'coleccion':
-        $cabeceras = Colecciones::listar(array('filtros' => array('id_coleccion = ' . $params['coleccion'])));
+        $cabeceras = $coleccion;
         break;
 }
 $cabeceras = current($cabeceras);
-$autor = current($autor);
 
 /* Incluyo la interfaz
 *************************************************************/
