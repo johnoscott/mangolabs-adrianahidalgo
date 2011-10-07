@@ -20,6 +20,14 @@
 <!-- AvenirLTStd95Black --> 	<link rel="stylesheet" href="/css/fonts/AvenirLTStd95Black/stylesheet.css" type="text/css" media="screen" charset="utf-8" />
 <!-- AvenirLTStd95Black --> 	<link rel="stylesheet" href="/css/fonts/AvenirLTStd85Heavy/stylesheet.css" type="text/css" media="screen" charset="utf-8" />
 
+
+<!-- JS
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="/js/global.js"></script>
+
+
 </head>
 
 <body>
