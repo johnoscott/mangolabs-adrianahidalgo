@@ -49,7 +49,7 @@
 						<div class="buttonbar"><button class="button">A&ntilde;adir a la bolsa de compras</button></div>
 						<p><?=$libro['subtitulo']?></p>
 						<ul>
-							<li>Colecci&oacute;n: <?=$coleccion['nombre']?></li>
+							<li>Colecci&oacute;n: <?=$libro['coleccion']?></li>
 							<li>G&eacute;nero: <?=$libro['genero']?></li>
 							<li>ISBN: <?=$libro['isbn']?></li>
 						</ul>
