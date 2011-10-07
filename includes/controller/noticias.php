@@ -5,20 +5,16 @@
 
 
 
-	
-	
-
 
 if ($_REQUEST['params']) {
 
 	/* Detalle de noticia
 	********************************************************/
 	
-	// Tomo el id
+	// Tomo la noticia
 	$id = addslashes($_REQUEST['params']);
-	// Descomentar cuando la funcion exista
-	// $noticias = Noticias::get($id);
-	$noticia = $noticias_ejemplo[$section][$id];
+	$noticias = Novedades::get($id);
+	$noticia = current($noticias);
 
 } else {
 
@@ -29,15 +25,15 @@ if ($_REQUEST['params']) {
 	$opciones  = array(
 		'rpp' => ($params['items']) ? $params['items'] : 100,
 		'page' => ($params['pagina']) ? $params['pagina'] : 1,
-		'filtros' => array('anio' => 'anio = ' . $section)
+		'filtros' => array('year' => 'EXTRACT(YEAR FROM n.ctime) = ' . $section)
 	);
 
 	# print_r($opciones);
 
 	// Descomentar cuando la funcion exista
-	// $noticias = Noticias::listar($opciones);
+	$noticias = Novedades::listar($opciones);
 
-	$noticias = $noticias_ejemplo[$section];
+	// $noticias = $noticias_ejemplo[$section];
 
 }
 
