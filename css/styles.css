@@ -377,6 +377,7 @@ ul.books li {
 	text-transform: uppercase;
 	vertical-align: top;
 	float: left;
+	font-size: 10px;
 }
 
 ul.books li .front {
@@ -386,14 +387,18 @@ ul.books li .front {
 }
 
 ul.books li .author {
-	font: 0.8em Arial, sans-serif;
+	font: Arial, sans-serif;
 	letter-spacing: 2px;
 }
 
 ul.books li .title {
-	font-size: 1.2em;
-	font-weight: bold;
+	font-size: 1.5em;
 	font-family: 'AvenirLTStd85Heavy';
+	color: #444;
+	word-spacing: 0.05em;
+	letter-spacing: 0;
+	line-height: 1em;
+	font-size: 1.5em;
 }
 
 ul.books li .price {
