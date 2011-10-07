@@ -18,6 +18,7 @@
 
 <!-- AvenirLTStd55Roman --> 	<link rel="stylesheet" href="/css/fonts/AvenirLTStd55Roman/stylesheet.css" type="text/css" media="screen" charset="utf-8" />
 <!-- AvenirLTStd95Black --> 	<link rel="stylesheet" href="/css/fonts/AvenirLTStd95Black/stylesheet.css" type="text/css" media="screen" charset="utf-8" />
+<!-- AvenirLTStd95Black --> 	<link rel="stylesheet" href="/css/fonts/AvenirLTStd85Heavy/stylesheet.css" type="text/css" media="screen" charset="utf-8" />
 
 </head>
 

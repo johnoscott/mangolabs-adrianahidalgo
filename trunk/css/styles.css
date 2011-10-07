@@ -60,6 +60,10 @@ a:hover, a:active {
 	font-family: 'AvenirLTStd55Roman';
 }
 
+.avenir85 {
+	font-family: 'AvenirLTStd85Heavy';
+}
+
 .avenir95 {
 	font-family: 'AvenirLTStd95Black';
 }
@@ -329,7 +333,7 @@ ul.menu {
 	margin-bottom: 1em;
 	font-size: 15px;
 	font-weight: bold;
-	font-family: 'AvenirLTStd95Black';
+	font-family: 'AvenirLTStd85Heavy';
 }
 
 ul.menu li {
@@ -349,7 +353,7 @@ ul.list {
 	text-transform: uppercase;
 	font-size: 24px;
 	line-height: 1em;
-	font-family: 'AvenirLTStd95Black';
+	font-family: 'AvenirLTStd85Heavy';
 }
 
 .selected {
@@ -389,7 +393,7 @@ ul.books li .author {
 ul.books li .title {
 	font-size: 1.2em;
 	font-weight: bold;
-	font-family: 'AvenirLTStd95Black';
+	font-family: 'AvenirLTStd85Heavy';
 }
 
 ul.books li .price {
@@ -414,7 +418,7 @@ ul.catalog li img {
 
 ul.catalog li .title {
 	font-size: 25px;
-	font-family: 'AvenirLTStd95Black';
+	font-family: 'AvenirLTStd85Heavy';
 	line-height: 25px;
 	width: 90%;
 }
@@ -444,7 +448,7 @@ ul.news li img {
 ul.news li .ctime {
 	font-size: 10px;
 	font-style: italic;
-	font-family: 'AvenirLTStd95Black';
+	font-family: 'AvenirLTStd85Heavy';
 	color: #AAA;
 	margin: 5px 0;
 }
@@ -513,7 +517,7 @@ ul.news li .title {
 .detail h2 {
 	margin-bottom: 10px;
 	line-height: 1em;
-	font-family: 'AvenirLTStd95Black';
+	font-family: 'AvenirLTStd85Heavy';
 }
 
 .detail .sidebar {
@@ -592,7 +596,7 @@ ul.news li .title {
 .detail .ctime {
 	font-size: 14px;
 	color: #AAA;
-	font-family: 'AvenirLTStd95Black';
+	font-family: 'AvenirLTStd85Heavy';
 	margin-bottom: 5px;
 }
 
