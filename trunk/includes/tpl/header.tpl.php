@@ -44,6 +44,7 @@
 		<? endforeach; ?>
 	</ul>
 	
+	<!--
 	<div class="toolbar">
 		english | mapa del sitio | contacto
 		<div class="cart">
@@ -56,4 +57,5 @@
 		</div>
 		<input type="text" placeholder="Buscar...">
 	</div>
+	-->
 
