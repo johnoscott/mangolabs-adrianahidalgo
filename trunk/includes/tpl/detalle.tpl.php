@@ -43,7 +43,7 @@
 			<div id="ficha" class="tab">
 				<div class="uppercase">
 					<h5 class="author"><?=$libro['autor']?></h5>
-					<h2 class="avenir95"><?=$libro['titulo']?></h2>
+					<h2 class="avenir85"><?=$libro['titulo']?></h2>
 					<div>
 						<p class="price">$ <?=$libro['precio']?> .-</p>
 						<div class="buttonbar"><button class="button">A&ntilde;adir a la bolsa de compras</button></div>
