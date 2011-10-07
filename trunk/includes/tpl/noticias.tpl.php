@@ -9,27 +9,27 @@
 		<!-- Detalle de noticia -->
 		<? if ($id): ?>
 			<div class="detail">
-				<p class="ctime"><?=$noticia['ctime']?></p>
+				<p class="ctime"><?=$noticia['fecha']?></p>
 				<h2><?=$noticia['titulo']?></h2>
-				<img src="/img/video.jpg" />
+				<? if ($noticia['video']): ?>
+					<iframe width="420" height="315" src="<?=$noticia['embed']?>" frameborder="0" allowfullscreen></iframe>
+				<? else: ?>
+					<img class="new" src="/uploads/novedades/<?=$noticia['imagen']?>" />
+				<? endif; ?>
 				<hr>
 				<div>
-					<?=$noticia['texto']?>
+					<?=$noticia['contenido']?>
 				</div>
 			</div>
-		<? endif; ?>
-		
-		
-		
 		
 		<!-- Listado de noticias -->
-		<? if ($noticias): ?>
+		<? elseif ($noticias): ?>
 			<ul class="news equal">
 				<? foreach($noticias as $noticia): ?>
 					<li>
-						<a href="/web/noticias/<?=$section?>/<?=$noticia['id_noticia']?>">
-							<img src="/img/noticias/<?=$noticia['imagen']?>">
-							<p class="ctime"><?=$noticia['ctime']?></p>
+						<a href="/web/noticias/<?=$section?>/<?=$noticia['id_novedad']?>">
+							<img src="/uploads/novedades/<?=$noticia['imagen']?>">
+							<p class="ctime"><?=$noticia['fecha']?></p>
 							<p class="title"><?=$noticia['titulo']?></p>
 						</a>
 					</li>

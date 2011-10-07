@@ -671,6 +671,7 @@ background: white;
 /* Forms */
 
 
+.app-classic form select,
 .app-classic form input[type="text"],
 .app-classic form input[type="password"],
 .app-classic form textarea {

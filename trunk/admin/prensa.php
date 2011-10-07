@@ -12,14 +12,14 @@
 	// Almaceno la url del listado de este modulo para redireccionar despues del abm
 	$Session->set($config['modulo'].'_listado', $_SERVER['REQUEST_URI']);
 
-	$data['titles'] = array('Codigo', 'Libro', 'Emisor', 'Medio');
+	$data['titles'] = array('Codigo', 'Libro', 'Comentario', 'Emisor', 'Medio');
 
 	// Borro el registro
 	if ($_GET['delete'])
 		$db->query("DELETE FROM prensa WHERE id_prensa = '".addslashes($_GET['delete'])."'");
 
 	// Obtengo el listado
-	if ($listado = $db->get_results("SELECT p.id_prensa, l.titulo, p.emisor, p.medio FROM prensa p LEFT JOIN libros l ON p.id_libro = l.id_libro ORDER BY p.emisor"))
+	if ($listado = $db->get_results("SELECT p.id_prensa, l.titulo, p.comentario, p.emisor, p.medio FROM prensa p LEFT JOIN libros l ON p.id_libro = l.id_libro ORDER BY l.titulo"))
 		foreach ($listado as $l)
 			$data['listado'][$l['id_prensa']] = $l;
 
