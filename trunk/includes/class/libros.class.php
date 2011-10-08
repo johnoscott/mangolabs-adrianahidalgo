@@ -67,14 +67,22 @@ class Libros extends Core {
 		$libro = array();
 		
 		// Busco el libro solicitado
-		$datos = $this->listar(array('filtros' => array("l.id_libro = '$id_libro'"), 'rpp' => 1));
-		
-		//$db->debug();
+		$libro = $db->get_row("
+			SELECT l.*, a.nombre autor, a.biografia biografia, g.nombre genero, c.nombre coleccion
+			FROM libros l
+			LEFT JOIN autores a
+			ON l.id_autor = a.id_autor
+			LEFT JOIN generos g
+			ON l.id_genero = g.id_genero
+			LEFT JOIN colecciones c
+			ON l.id_coleccion = c.id_coleccion
+			WHERE l.id_libro = '$id_libro'
+		");
 		
 		// Obtengo las notas de prensa de este libro
 		$prensa = $this->prensa($id_libro);
 
-		return array_merge(current($datos), array('prensa' => $prensa));
+		return array_merge($libro, array('prensa' => $prensa));
 	}
 
 	/**

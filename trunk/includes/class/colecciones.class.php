@@ -64,7 +64,7 @@ class Colecciones extends Core {
 		$db = ($this)? $this->db : ez_sql::getInstance();
 
 		// Busco el autor solicitado
-		$coleccion = $this->listar(array('filtros' => array("id_coleccion = '$id_coleccion'"), 'rpp' => 1));
+		$coleccion = ($this) ?  $this->listar(array('filtros' => array("id_coleccion = '$id_coleccion'"), 'rpp' => 1)) : Colecciones::listar(array('filtros' => array("id_coleccion = '$id_coleccion'"), 'rpp' => 1));
 
 		return $coleccion;
 	}

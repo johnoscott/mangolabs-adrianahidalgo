@@ -20,8 +20,8 @@
 		<div class="sidebar">
 			<img class="cover" src="/uploads/libros/<?=$libro['imagen']?>"/>
 			<div class="social">
-				<img src="/img/facebook.png"/>
-				<img src="/img/twitter.png"/>
+				<a title="Compartir en Facebook" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=<?=urlencode(CONFIG_SITE_URL . $_SERVER['REQUEST_URI'])?>"><img src="/img/facebook.png"/></a>
+				<a title="Compartir en Twitter" target="_blank" href="http://twitter.com/home?status=<?=urlencode('Recomiendo el libro ' . $libro['titulo'] . ': ' . CONFIG_SITE_URL . $_SERVER['REQUEST_URI'])?>"><img src="/img/twitter.png"/></a>
 				<img src="/img/email.png"/>
 			</div>
 		</div>
@@ -65,8 +65,8 @@
 			
 			<!-- Tab 2: Autor -->
 			<div id="autor" class="tab hide">
-				<h2 class="selected"><?=$autor['nombre']?></h2>
-				<?=$autor['biografia']?>
+				<h2 class="margin selected"><?=$libro['autor']?></h2>
+				<?=$libro['biografia']?>
 			</div>
 			
 			
@@ -81,7 +81,7 @@
 			<!-- Tab 4: Prensa -->
 			<div id="prensa" class="tab hide">
 				<? foreach($libro['prensa'] as $opinion):?>
-				<div class="quote avenir55">
+				<div class="margin quote avenir55">
 					<p class="citation">&#8220;<?=$opinion['comentario']?>&#8221;</p>
 					<p class="talker"><?=$opinion['emisor']?><br><em>- <?=$opinion['medio']?> -</em></p>
 				</div>

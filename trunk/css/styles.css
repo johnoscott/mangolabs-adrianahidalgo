@@ -394,7 +394,6 @@ ul.books li .author {
 ul.books li .title {
 	font-size: 1.5em;
 	font-family: 'AvenirLTStd85Heavy';
-	color: #444;
 	word-spacing: 0.05em;
 	letter-spacing: 0;
 	line-height: 1em;
@@ -603,6 +602,10 @@ ul.news li .title {
 	color: #AAA;
 	font-family: 'AvenirLTStd85Heavy';
 	margin-bottom: 5px;
+}
+
+.detail .margin {
+	margin-top: 30px;
 }
 
 
