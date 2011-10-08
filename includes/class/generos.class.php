@@ -64,7 +64,7 @@ class Generos extends Core {
 		$db = ($this)? $this->db : ez_sql::getInstance();
 
 		// Busco el autor solicitado
-		$genero = $this->listar(array('filtros' => array("id_genero = '$id_genero'"), 'rpp' => 1));
+		$genero = ($this) ? $this->listar(array('filtros' => array("id_genero = '$id_genero'"), 'rpp' => 1)) : Generos::listar(array('filtros' => array("id_genero = '$id_genero'"), 'rpp' => 1));
 
 		return $genero;
 	}
