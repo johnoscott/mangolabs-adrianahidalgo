@@ -12,10 +12,6 @@
 
 <div class="content">
 
-
-
-
-
 	<? include('includes/tpl/sidebar.tpl.php'); ?>
 	
 	<div class="main catalogo">
