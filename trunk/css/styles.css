@@ -355,6 +355,10 @@ ul.list {
 	font-family: 'AvenirLTStd85Heavy';
 }
 
+ul.list li {
+	margin-bottom: 4px;
+}
+
 .selected {
 	color: #d2232a;
 	text-decoration: underline;
