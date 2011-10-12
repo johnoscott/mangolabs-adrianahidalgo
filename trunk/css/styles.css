@@ -550,6 +550,7 @@ ul.news li .title {
 
 .detail ul.menu {
 	padding-top: 5px;
+	margin-top: 0;
 }
 
 .detail ul.menu li a {
