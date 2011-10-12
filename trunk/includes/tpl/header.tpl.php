@@ -39,13 +39,16 @@
 	<a class="logo" href="/"><img src="/img/adriana-hidalgo-editora<? if ($pipala):?>-pipala<? endif; ?>.gif"></a>
 	
 	<ul class="menu">
-		<? foreach ($sections as $key_sections => $value_sections): ?>
+		<? foreach ($sections as $key_sections => $value_sections): 
+				if (!$value_sections['hidden']): ?>
 			<li><a <? if($tab == $key_sections): ?> class="selected" <? endif ?> href="/web/<?=$value_sections['url']?>"><?=$value_sections['alias']?></a></li>
-		<? endforeach; ?>
+		<? 		endif; 
+			endforeach; ?>
 	</ul>
 	
 	
 	<div class="toolbar">
+		<form id="form-search" action="/web/busqueda/titulo/" method="post">
 		<div>ENGLISH | MAPA DEL SITIO | CONTACTO</div>
 		<div class="cart">
 			<div class="left">
@@ -55,7 +58,8 @@
 			<div class="bag">2</div>
 			<div class="pay">$ 79,00</div>
 		</div>
-		<input type="text" placeholder="Buscar...">
+		<input type="text" placeholder="Buscar..." name="search">
+		</form>
 	</div>
 	
 
