@@ -44,9 +44,9 @@
 		<? endforeach; ?>
 	</ul>
 	
-	<!--
+	
 	<div class="toolbar">
-		english | mapa del sitio | contacto
+		ENGLISH | MAPA DEL SITIO | CONTACTO
 		<div class="cart">
 			<div class="left">
 				<a href="/web/shop/items/">Mis compras</a>
@@ -57,5 +57,5 @@
 		</div>
 		<input type="text" placeholder="Buscar...">
 	</div>
-	-->
+	
 
