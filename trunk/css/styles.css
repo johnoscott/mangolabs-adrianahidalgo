@@ -293,10 +293,9 @@ pre {
 
 .toolbar .cart .bag {
     background: url(/img/bolsita.png) no-repeat;
-    border-radius: 30px;
     color: white;
     float: left;
-    height: 35px;
+    height: 45px;
     padding-top: 9px;
     text-align: center;
     width: 35px;
