@@ -2,7 +2,7 @@
 <? if ($pipala): ?>
 
 <div class="animacion">
-	<object type="application/x-shockwave-flash" data="/img/pipala.swf" width="960" height="800">
+	<object type="application/x-shockwave-flash" data="/img/pipala.swf" width="960" height="800" wmode="transparent">
 		<param name="movie" value="/img/pipala.swf"/>
 		<param name="wmode" value="transparent"/>
 	</object>
