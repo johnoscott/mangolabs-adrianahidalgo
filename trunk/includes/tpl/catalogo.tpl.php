@@ -1,3 +1,9 @@
+
+
+
+<div class="content">
+
+
 <? if ($pipala): ?>
 
 <object type='application/x-shockwave-flash' data='/img/pipala.swf' width='100%' height='100%'><param name='movie' value='/img/pipala.swf' /></object>
@@ -8,8 +14,6 @@ hola
 
 <? endif; ?>
 
-
-<div class="content">
 
 	<? include('includes/tpl/sidebar.tpl.php'); ?>
 	
