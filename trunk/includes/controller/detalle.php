@@ -21,6 +21,10 @@ $params = $_SESSION['params'];
 // Preparo las cabeceras
 $cabeceras = ${$section};
 
+// Marco si es un libro de Pipala
+if ($libro['id_categoria'] == 1)
+	$pipala = true;
+
 /* Incluyo la interfaz
 *************************************************************/
 include('includes/tpl/header.tpl.php');

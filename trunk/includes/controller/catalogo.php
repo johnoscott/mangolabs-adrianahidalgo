@@ -51,6 +51,7 @@ switch ($section) {
 	case 'coleccion':
 		$colecciones = Colecciones::listar();
 		$params['coleccion'] = ($params['coleccion']) ? $params['coleccion'] : current($colecciones);
+		print_r($params['coleccion']);
 		break;
 }
 
