@@ -561,6 +561,7 @@ ul.news li .title {
 	color: white;
 	background: #d2232a;
 	position: relative;
+	text-decoration: none;
 }
 
 /*
