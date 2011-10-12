@@ -155,7 +155,20 @@ $sections = array(
 				'control' => 'noticias.php'
 			)
 		)
-	)
+	),
+	'busqueda' => array (
+		'alias' => 'Busqueda',
+		'hidden' => true,
+		'url' => 'busqueda/',
+		'control' => 'busqueda.php',
+		'sub' => array(
+			'titulo' => array(
+				'alias' => 'Busqueda',
+				'url' => 'busqueda/',
+				'control' => 'busqueda.php'
+			)
+		)
+	),
 );
 
 
