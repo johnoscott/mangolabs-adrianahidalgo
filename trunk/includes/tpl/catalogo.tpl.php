@@ -6,11 +6,10 @@
 
 <? if ($pipala): ?>
 
-<object type='application/x-shockwave-flash' data='/img/pipala.swf' width='100%' height='100%'><param name='movie' value='/img/pipala.swf' /></object>
-
-<? else: ?> 
-
-hola
+<object type="application/x-shockwave-flash" data="/img/pipala.swf" width="700" height="800">
+	<param name="movie" value="/img/pipala.swf"/>
+	<param name="wmode" value="transparent"/>
+</object>
 
 <? endif; ?>
 
