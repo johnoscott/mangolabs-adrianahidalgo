@@ -1,9 +1,4 @@
 
-
-
-<div class="content">
-
-
 <? if ($pipala): ?>
 
 <div class="animacion">
@@ -14,6 +9,11 @@
 </div>
 
 <? endif; ?>
+
+<div class="content">
+
+
+
 
 
 	<? include('includes/tpl/sidebar.tpl.php'); ?>
