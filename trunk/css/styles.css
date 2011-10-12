@@ -274,7 +274,7 @@ pre {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 237px;
+	width: 255px;
 }
 
 .toolbar  .cart {
@@ -300,7 +300,7 @@ pre {
     text-align: center;
     width: 35px;
 	margin-left: 10px;
-    margin-top: 9px;
+    margin-top: 15px;
 	margin-right: 10px;
 }
 
