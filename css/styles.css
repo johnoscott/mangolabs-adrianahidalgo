@@ -627,17 +627,21 @@ ul.news li .title {
 
 
 .pipala a:hover, a:active {
-	color: blue;
+	color: #00A08C;
 }
 
 .pipala .selected {
-	color: blue;
+	color: #00A08C;
 }
 
 .pipala .pastilla {
-	background-color: blue;
+	background-color: #00A08C;
 }
 
 .pipala .detail ul.menu li a.selected {
-	background: blue;
+	background: #00A08C;
+}
+
+.pipala .button {
+	background: #00A08C;
 }

@@ -36,7 +36,7 @@
 
 <div class="container">
 
-	<a class="logo" href="/"><img src="/img/adriana-hidalgo-editora.gif"></a>
+	<a class="logo" href="/"><img src="/img/adriana-hidalgo-editora<? if ($pipala):?>-pipala<? endif; ?>.gif"></a>
 	
 	<ul class="menu">
 		<? foreach ($sections as $key_sections => $value_sections): ?>
