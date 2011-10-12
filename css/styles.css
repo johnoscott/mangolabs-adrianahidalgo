@@ -14,7 +14,6 @@ body {
 	font: 13px/1.3em 'AvenirLTStd55Roman', Arial, sans-serif;
 	background: #f2f0e8;
 	color: #595959;
-	padding-top: 27px;
 	text-align: center;
 	padding-bottom: 3em;
 }
@@ -266,6 +265,7 @@ pre {
 	margin-bottom: 1em;
 	display: block;
 	height: 77px;
+	padding-top: 27px;
 }
 
 
