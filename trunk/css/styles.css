@@ -633,6 +633,10 @@ ul.news li .title {
 	background-color: #00A08C;
 }
 
+.pipala .pastilla a {
+	color: white;
+}
+
 .pipala .detail ul.menu li a.selected {
 	background: #00A08C;
 }
