@@ -14,7 +14,7 @@ body {
 	font: 13px/1.3em 'AvenirLTStd55Roman', Arial, sans-serif;
 	background: #f2f0e8;
 	color: #595959;
-	padding-top: 1em;
+	padding-top: 27px;
 	text-align: center;
 	padding-bottom: 3em;
 }
@@ -46,7 +46,7 @@ a:hover, a:active {
 .container {
 	_width: 960px; /* IE6 */
     max-width: 960px;
-	padding: 0 20px;
+	padding-left: 31px;
 	text-align: left;
 	position: relative;
 }
