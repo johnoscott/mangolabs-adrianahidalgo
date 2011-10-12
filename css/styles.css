@@ -622,3 +622,22 @@ ul.news li .title {
 }
 
 
+/* Pipala */
+
+
+
+.pipala a:hover, a:active {
+	color: blue;
+}
+
+.pipala .selected {
+	color: blue;
+}
+
+.pipala .pastilla {
+	background-color: blue;
+}
+
+.pipala .detail ul.menu li a.selected {
+	background: blue;
+}
