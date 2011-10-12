@@ -273,7 +273,7 @@ pre {
 
 .toolbar {
 	position: absolute;
-	top: 0;
+	top: 27px;
 	right: 0;
 	width: 255px;
 }
@@ -332,6 +332,7 @@ ul.menu {
 	margin-bottom: 1em;
 	font-size: 15px;
 	font-family: 'AvenirLTStd85Heavy';
+	margin-top: 27px;
 }
 
 ul.menu li {
