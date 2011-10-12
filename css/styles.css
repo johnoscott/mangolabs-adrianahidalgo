@@ -47,7 +47,6 @@ a:hover, a:active {
 	_width: 960px; /* IE6 */
     max-width: 960px;
 	padding: 0 20px;
-    margin: 0 auto;
 	text-align: left;
 	position: relative;
 }
