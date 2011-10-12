@@ -46,7 +46,7 @@
 	
 	
 	<div class="toolbar">
-		ENGLISH | MAPA DEL SITIO | CONTACTO
+		<div>ENGLISH | MAPA DEL SITIO | CONTACTO</div>
 		<div class="cart">
 			<div class="left">
 				<a href="/web/shop/items/">Mis compras</a>
