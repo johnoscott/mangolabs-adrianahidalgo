@@ -37,6 +37,7 @@ a {
 
 a:hover, a:active {
 	color: #d2232a;
+	text-decoration: underline;
 }
 
 .uppercase {
@@ -355,7 +356,7 @@ ul.list {
 
 .selected {
 	color: #d2232a;
-	/* text-decoration: underline; */
+	text-decoration: underline;
 	text-transform: uppercase;
 }
 
