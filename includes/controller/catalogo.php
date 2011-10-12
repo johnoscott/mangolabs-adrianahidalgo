@@ -51,7 +51,9 @@ switch ($section) {
 	case 'coleccion':
 		$colecciones = Colecciones::listar();
 		$params['coleccion'] = ($params['coleccion']) ? $params['coleccion'] : current($colecciones);
-		print_r($params['coleccion']);
+		// Marcamos si es Pipala
+		if ($params['coleccion'] == 1)
+			$pipala = true;
 		break;
 }
 
