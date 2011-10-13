@@ -337,7 +337,7 @@ ul.menu {
 
 ul.menu li {
 	display: inline;
-	margin-right: 1em;
+	margin-right: 0.5em;
 	text-transform: uppercase;
 }
 
@@ -376,7 +376,7 @@ ul.books {
 
 ul.books li {
     width: 200px;
-	margin: 10px 15px;
+	margin: 10px;
 	text-transform: uppercase;
 	vertical-align: top;
 	float: left;
@@ -384,7 +384,7 @@ ul.books li {
 }
 
 ul.books li .front {
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 	padding: 2px;
 	width: 180px;
 }
