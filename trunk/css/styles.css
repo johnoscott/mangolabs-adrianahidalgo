@@ -499,8 +499,9 @@ ul.news li .title {
 
 .pastilla a {
 	display: block;
-	color: #AAA;
+	color: white;
 	padding: 14px 10px 0 10px;
+	text-decoration: none;
 }
 
 
