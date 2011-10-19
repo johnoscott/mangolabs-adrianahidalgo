@@ -258,8 +258,12 @@ pre {
 /*******************************************************************************/
 
 .fixed {
-	position: fixed;
-	min-width: 960px;
+    background: url("/img/fondo.jpg");
+    padding-left: 30px;
+    position: fixed;
+    text-align: left;
+    width: 960px;
+    z-index: 1;
 }
 
 
