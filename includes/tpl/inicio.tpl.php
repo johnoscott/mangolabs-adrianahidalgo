@@ -1,4 +1,4 @@
-<ul class="books equal">
+<ul class="books equal init">
 	<? foreach ($listado as $libro): ?>
 		<li>
 			<a href="/web/destacado/<?=$libro['id_libro']?>">
