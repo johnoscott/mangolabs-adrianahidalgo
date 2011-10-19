@@ -36,28 +36,29 @@
 
 <div class="container">
 
-
 	<div class="fixed">
 
 		<a class="logo" href="/"><img src="/img/adriana-hidalgo-editora<? if ($pipala):?>-pipala<? endif; ?>.gif"></a>
 		
 		<ul class="menu">
-			<? foreach ($sections as $key_sections => $value_sections): 
-					if (!$value_sections['hidden']): ?>
+			<? foreach ($sections as $key_sections => $value_sections): ?>
 				<li><a <? if($tab == $key_sections): ?> class="selected" <? endif ?> href="/web/<?=$value_sections['url']?>"><?=$value_sections['alias']?></a></li>
-			<? 		endif; 
-				endforeach; ?>
+			<? endforeach; ?>
 		</ul>
 		
 		
 		<div class="toolbar">
 			<form id="form-search" action="/web/busqueda/titulo/" method="post">
-			<div>ENGLISH | MAPA DEL SITIO | CONTACTO</div>
-			<div class="cart">
-				<div class="left">
-					<a href="/web/shop/items/">Mis compras</a>
-					<a href="/web/shop/checkout/">Checkout</a>
-			<input type="text" placeholder="Buscar..." name="search">
+				<div>ENGLISH | MAPA DEL SITIO | CONTACTO</div>
+				<div class="cart">
+					<div class="left">
+						<a href="/web/shop/items/">Mis compras</a>
+						<a href="/web/shop/checkout/">Checkout</a>
+					</div>
+					<div class="bag">2</div>
+					<div class="pay">$ 79,00</div>
+				</div>
+				<input type="text" placeholder="Buscar..." name="search">
 			</form>
 		</div>
 	
