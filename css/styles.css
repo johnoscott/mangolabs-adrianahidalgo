@@ -372,6 +372,7 @@ ul.list li {
 ul.books {
 	overflow: auto;
 	margin-bottom: 25px;
+	border-left: 1px solid #CFCDBA;
 }
 
 ul.books > li {
