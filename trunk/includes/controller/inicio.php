@@ -1,7 +1,12 @@
 <?
 
 $Libros = new Libros();
-$listado = $Libros->listar(array('filtros' => array("l.home = '1'")));
+$listado = $Libros->listar(
+	array(
+		'filtros' => array("l.home = '1'"),
+		'rpp' => 6
+	)
+);
 
 /* Incluyo la interfaz
 *************************************************************/
