@@ -14,9 +14,11 @@ $pipalas = $Libros->listar(
 	)
 );
 
+$year = date('Y');
 $Novedades = new Novedades();
 $noticias = $Novedades->listar(
 	array(
+		'filtros' => array('year' => 'EXTRACT(YEAR FROM n.ctime) = ' . $year);
 		'rpp' => 2
 	)
 );
