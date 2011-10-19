@@ -406,6 +406,12 @@ ul.books li .price {
 	display: none;
 }
 
+.ribbon {
+	position: absolute;
+	margin-top: -17px;
+	margin-left: -7px;
+}
+
 
 /* CATALOG LIST */
 

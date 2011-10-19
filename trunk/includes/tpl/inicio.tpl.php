@@ -1,3 +1,4 @@
+<div class="ribbon"><img src="ribbon-novedades.png"></div>
 <ul class="books equal init">
 	<? foreach ($listado as $libro): ?>
 		<li>
