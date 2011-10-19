@@ -34,10 +34,12 @@ $(function() {
 	
 	
 
-	// Equal Height	
-		
-	var maxHeight = -1;
-	var obj = $('.equal').children('li');
+// Equal Height	
+
+$('.equal').each(function() {
+    
+    var maxHeight = -1;
+    obj = $(this).children('li');
 
 	obj.each(function() {
 		maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
@@ -46,6 +48,8 @@ $(function() {
 	obj.each(function() {
 		$(this).height(maxHeight);
 	});
+
+});
 
 	
 	
