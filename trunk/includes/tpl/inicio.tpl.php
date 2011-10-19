@@ -13,7 +13,7 @@
 			</a>
 		</li>
 	<? endforeach; ?>
-	</div>
+	</ul>
 	
 	<div class="ribbon"><img src="/img/ribbon-pipala.png"></div> 
 	<ul class="books equal">
