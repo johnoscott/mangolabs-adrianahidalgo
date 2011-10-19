@@ -328,7 +328,6 @@ pre {
 /* MENU */
 
 ul.menu {
-	margin-bottom: 30px;
 	font-size: 15px;
 	font-family: 'AvenirLTStd85Heavy';
 	margin-top: 40px;
@@ -416,10 +415,6 @@ ul.books > li .price {
 	position: absolute;
 	margin-top: -17px;
 	margin-left: -7px;
-}
-
-.init {
-	border-left: 1px solid #CFCDBA;
 }
 
 .init ul.news {
