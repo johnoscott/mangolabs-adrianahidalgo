@@ -371,7 +371,6 @@ ul.list li {
 
 ul.books {
 	overflow: auto;
-	border-left: 1px solid #CFCDBA;
 }
 
 ul.books > li {
@@ -423,6 +422,7 @@ ul.books > li .price {
 
 .init ul.news {
 	overflow: auto;
+	border-left: 1px solid #CFCDBA;
 }
 
 .init ul.news li {
