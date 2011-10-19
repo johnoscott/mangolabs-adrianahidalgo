@@ -32,7 +32,7 @@
 			<ul class="news">
 				<? foreach($noticias as $noticia): ?>
 					<li>
-						<a href="/web/noticias/<?=$section?>/<?=$noticia['id_novedad']?>">
+						<a href="/web/noticias/<?=$year?>/<?=$noticia['id_novedad']?>">
 							<img src="/uploads/novedades/<?=$noticia['imagen']?>">
 							<p class="ctime"><?=$noticia['fecha']?></p>
 							<p class="title"><?=$noticia['titulo']?></p>
