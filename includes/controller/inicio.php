@@ -8,6 +8,13 @@ $listado = $Libros->listar(
 	)
 );
 
+$Novedades = new Novedades();
+$noticias = $Novedades->listar(
+	array(
+		'rpp' => 2
+	)
+);
+
 /* Incluyo la interfaz
 *************************************************************/
 require('includes/tpl/header.tpl.php');

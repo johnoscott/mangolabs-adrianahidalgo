@@ -11,3 +11,8 @@
 		</li>
 	<? endforeach; ?>
 </ul>
+<ul>
+	<? foreach ($noticias as $noticia): ?>
+		<?=$noticia['titulo']?>
+	<? endforeach; ?>
+</ul>
