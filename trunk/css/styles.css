@@ -12,7 +12,7 @@ menu, nav, section { display: block; }
 
 body {
 	font: 13px/1.3em 'AvenirLTStd55Roman', Arial, sans-serif;
-	background: #f2f0e8;
+	background: #f2f0e8 url(/img/fondo.jpg);
 	color: #595959;
 	text-align: center;
 	padding-bottom: 3em;
