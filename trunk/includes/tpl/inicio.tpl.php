@@ -44,7 +44,7 @@
 	</ul>
 	
 	
-	<div class="ribbon"><img src="/img/ribbon-novedades.png"></div> 
+	<div class="ribbon"><img src="/img/ribbon-reediciones.png"></div> 
 	<ul class="books equal">
 	<? foreach ($reediciones as $libro): ?>
 		<li>

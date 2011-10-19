@@ -16,7 +16,7 @@ $pipalas = $Libros->listar(
 $reediciones = $Libros->listar(
 	array(
 		'filtros' => array("l.reedicion = 1"),
-		'rpp' => 3
+		'rpp' => 4
 	)
 );
 
