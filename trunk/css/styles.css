@@ -441,6 +441,10 @@ ul.books > li .price {
 	font-weight: normal;
 }
 
+.init ul.news li .ctime {
+	margin: 0;
+}
+
 /* CATALOG LIST */
 
 ul.catalog li {
