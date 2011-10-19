@@ -35,7 +35,7 @@ $(function() {
 	
 
 // Equal Height	
-
+/*
 $('.equal').each(function() {
     
     var maxHeight = -1;
@@ -50,7 +50,7 @@ $('.equal').each(function() {
 	});
 
 });
-
+*/
 	
 	
 });
