@@ -34,7 +34,7 @@
 
 <div class="fixed">
 
-	<a class="logo" href="/"><img src="/img/adriana-hidalgo-editora<? if ($pipala):?>-pipala<? endif; ?>.gif"></a>
+	<a class="logo" href="/"><img src="/img/adriana-hidalgo<? if ($pipala):?>-pipala<? endif; ?>.png"></a>
 	
 	<ul class="menu">
 		<? foreach ($sections as $key_sections => $value_sections): ?>
