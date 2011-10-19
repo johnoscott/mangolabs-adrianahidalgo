@@ -11,6 +11,7 @@
 		</li>
 	<? endforeach; ?>
 		<li>
+			<div class="ribbon"><img src="/img/ribbon-noticias.png"></div>
 			<ul class="news">
 				<? foreach($noticias as $noticia): ?>
 					<li>
