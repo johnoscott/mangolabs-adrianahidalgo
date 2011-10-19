@@ -10,9 +10,18 @@
 			</a>
 		</li>
 	<? endforeach; ?>
+		<li>
+			<ul class="news">
+				<? foreach($noticias as $noticia): ?>
+					<li>
+						<a href="/web/noticias/<?=$section?>/<?=$noticia['id_novedad']?>">
+							<img src="/uploads/novedades/<?=$noticia['imagen']?>">
+							<p class="ctime"><?=$noticia['fecha']?></p>
+							<p class="title"><?=$noticia['titulo']?></p>
+						</a>
+					</li>
+				<? endforeach; ?>
+			</ul>
+		</li>
 </ul>
-<ul>
-	<? foreach ($noticias as $noticia): ?>
-		<?=$noticia['titulo']?>
-	<? endforeach; ?>
-</ul>
+
