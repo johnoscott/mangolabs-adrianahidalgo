@@ -38,7 +38,9 @@
 	
 	<ul class="menu">
 		<? foreach ($sections as $key_sections => $value_sections): ?>
-			<li><a <? if($tab == $key_sections): ?> class="selected" <? endif ?> href="/web/<?=$value_sections['url']?>"><?=$value_sections['alias']?></a></li>
+			<? if (!$value_sections['hidden']): ?>
+				<li><a <? if($tab == $key_sections): ?> class="selected" <? endif ?> href="/web/<?=$value_sections['url']?>"><?=$value_sections['alias']?></a></li>
+			<? endif; ?>
 		<? endforeach; ?>
 	</ul>
 	
