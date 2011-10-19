@@ -257,6 +257,10 @@ pre {
 
 /*******************************************************************************/
 
+.fixed {
+	position: fixed;
+}
+
 
 /* LOGO */
 
@@ -515,8 +519,9 @@ ul.news li .title {
 
 /* Content */
 
-.content {
-	padding-top: 1em;
+.content,
+.init {
+	padding-top: 170px;
 }
 
 /* Sidebar */
