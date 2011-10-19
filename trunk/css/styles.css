@@ -374,7 +374,7 @@ ul.books {
 	border-left: 1px solid #CFCDBA;
 }
 
-ul.books li {
+ul.books > li {
     width: 200px;
 	margin: 10px;
 	text-transform: uppercase;
@@ -383,20 +383,20 @@ ul.books li {
 	font-size: 10px;
 }
 
-ul.books li .wrap {
+ul.books > li .wrap {
 	min-height: 280px;
 }
 
-ul.books li .front {
+ul.books > li .front {
 	padding: 2px;
 	width: 180px;
 }
 
-ul.books li .author {
+ul.books > li .author {
 	font: Arial, sans-serif;
 }
 
-ul.books li .title {
+ul.books > li .title {
 	font-size: 1.5em;
 	font-family: 'AvenirLTStd85Heavy';
 	word-spacing: 0.05em;
@@ -405,9 +405,11 @@ ul.books li .title {
 	font-size: 1.5em;
 }
 
-ul.books li .price {
+ul.books > li .price {
 	display: none;
 }
+
+/* INIT */
 
 .ribbon {
 	position: absolute;
@@ -415,6 +417,9 @@ ul.books li .price {
 	margin-left: -7px;
 }
 
+.init .news {
+	
+}
 
 /* CATALOG LIST */
 
