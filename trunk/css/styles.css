@@ -445,6 +445,10 @@ ul.books > li .price {
 	margin: 0;
 }
 
+.init ul.news li:last-child {
+	margin-bottom: 0;
+}
+
 /* CATALOG LIST */
 
 ul.catalog li {
