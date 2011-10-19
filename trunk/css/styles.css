@@ -417,6 +417,10 @@ ul.books > li .price {
 	margin-left: -7px;
 }
 
+.init {
+	margin-top: 30px;
+}
+
 .init ul.news {
 	overflow: auto;
 	border-left: 1px solid #CFCDBA;
