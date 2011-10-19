@@ -37,7 +37,7 @@ $(function() {
 	// Equal Height	
 		
 	var maxHeight = -1;
-	var obj = $('li','.equal');
+	var obj = $('.equal').children('li');
 
 	obj.each(function() {
 		maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
