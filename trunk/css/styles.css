@@ -384,11 +384,10 @@ ul.books li {
 }
 
 ul.books li .wrap {
-	min-height: 270px;
+	min-height: 280px;
 }
 
 ul.books li .front {
-	margin-bottom: 0.5em;
 	padding: 2px;
 	width: 180px;
 }
