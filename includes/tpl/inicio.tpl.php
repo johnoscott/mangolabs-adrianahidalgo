@@ -1,5 +1,8 @@
-<div class="ribbon"><img src="/img/ribbon-novedades.png"></div> 
-<ul class="books equal init">
+
+<div class="init">
+
+	<div class="ribbon"><img src="/img/ribbon-novedades.png"></div> 
+	<ul class="books equal">
 	<? foreach ($listado as $libro): ?>
 		<li>
 			<a href="/web/destacado/<?=$libro['id_libro']?>">
@@ -10,6 +13,10 @@
 			</a>
 		</li>
 	<? endforeach; ?>
+	</div>
+	
+	<div class="ribbon"><img src="/img/ribbon-pipala.png"></div> 
+	<ul class="books equal">
 	<? foreach ($pipalas as $libro): ?>
 		<li>
 			<a href="/web/destacado/<?=$libro['id_libro']?>">
@@ -34,5 +41,6 @@
 				<? endforeach; ?>
 			</ul>
 		</li>
-</ul>
+	</ul>
+</div>
 
