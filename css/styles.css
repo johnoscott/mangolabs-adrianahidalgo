@@ -383,6 +383,10 @@ ul.books li {
 	font-size: 10px;
 }
 
+ul.books li .wrap {
+	min-height: 270px;
+}
+
 ul.books li .front {
 	margin-bottom: 0.5em;
 	padding: 2px;
