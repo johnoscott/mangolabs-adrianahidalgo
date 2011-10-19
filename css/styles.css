@@ -259,6 +259,7 @@ pre {
 
 .fixed {
 	position: fixed;
+	min-width: 960px;
 }
 
 
