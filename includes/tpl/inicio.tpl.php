@@ -10,7 +10,7 @@
 			</a>
 		</li>
 	<? endforeach; ?>
-	<? foreach ($pipalas as $pipala): ?>
+	<? foreach ($pipalas as $libro): ?>
 		<li>
 			<a href="/web/destacado/<?=$libro['id_libro']?>">
 				<div class="wrap"><img class="front" src="/uploads/libros/<?=$libro['imagen']?>"></div>
