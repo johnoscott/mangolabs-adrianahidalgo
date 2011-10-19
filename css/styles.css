@@ -422,6 +422,15 @@ ul.books > li .price {
 	border-left: 1px solid #CFCDBA;
 }
 
+.init ul.news li {
+	width: auto;
+	float: none;
+}
+
+.init ul.news li img {
+	width: 150px;
+}
+
 .init ul.news .title {
 	font-size: 13px;
 	text-transform: none;
