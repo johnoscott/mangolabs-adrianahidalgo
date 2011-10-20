@@ -99,6 +99,14 @@ article {
 	float: right;
 }
 
+input::-webkit-input-placeholder {
+    color:    white;
+}
+input:-moz-placeholder {
+    color:    white;
+}
+
+
 /*******************************************************************************/
 
 
