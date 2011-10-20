@@ -286,6 +286,10 @@ pre {
 	width: 255px;
 }
 
+.toolbar .mini {
+	font-size: 8px;
+}
+
 .toolbar  .cart {
 	margin-top: -2px;
 }
@@ -434,6 +438,7 @@ ul.books > li .price {
 .init ul.news li {
 	width: auto;
 	float: none;
+	margin-left: 10px;
 }
 
 .init ul.news li img {
@@ -617,17 +622,6 @@ ul.news li .title {
 	position: relative;
 	text-decoration: none;
 }
-
-/*
-.detail ul.menu li a.selected:after {
-	content: '';
-	border-top: 8px solid #d2232a;
-	border-right: 8px solid transparent;
-	position: absolute;
-	margin-top: 21px;
-	left: 0;
-}
-*/
 
 .detail .quote {
 	text-align: center;

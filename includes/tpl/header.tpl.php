@@ -47,7 +47,7 @@
 	
 	<div class="toolbar">
 		<form id="form-search" action="/web/busqueda/titulo/" method="post">
-			<div>ENGLISH | MAPA DEL SITIO | CONTACTO</div>
+			<div class="mini">ENGLISH | MAPA DEL SITIO | CONTACTO</div>
 			<div class="cart">
 				<div class="left">
 					<a href="/web/shop/items/">Mis compras</a>
