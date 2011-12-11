@@ -4,7 +4,7 @@
 			<li><a <? if ($key == $section): ?> class="selected" <? endif ?> href="/web/<?=$subsection['url']?>"><?=$subsection['alias']?></a></li>
 		<? endforeach; ?>
 	</ul>
-	<div class="pastilla"><a href="catalogo.pdf">Ver cat&aacute;logo propio (PDF)</a></div>
+	<div class="pastilla"><a href="catalogo.pdf">Ver cat&aacute;logo (PDF)</a></div>
 	<? if ($pipala): ?>
 		<div class="pipalablog">
 			<a href="http://ahpipala.blogspot.com">

@@ -5,11 +5,11 @@
 
 $staff = array(
 	'Direcci&oacute;n general' => 'Adriana Hidalgo Sol&aacute;',
-	'Direcci&oacute;n editorial' => 'Fabi&aacute;n Lebenblik',
-	'Colecci&oacute;n P&iacute;pala' => 'Clara Huffman',
+	'Direcci&oacute;n editorial' => 'Fabi&aacute;n Lebenglik',
+	'Colecci&oacute;n P&iacute;pala' => 'Clara Huffmann',
 	'Dise&ntilde;o y produccio&oacute;n' => 'Gabriela Di Giuseppe',
 	'Prensa y comunicaci&oacute;n' => 'Alejandro C&aacute;nepa',
-	'Administraci&oacute;n' => 'Mar&iacute;a Acu&ntilde;a Ludue&ntilde;a',
+	'Administraci&oacute;n' => 'Mariana Acu&ntilde;a Ludue&ntilde;a',
 	'Asistente editorial' => 'Ana Skiendziel',
 	'Auditor&iacute;a' => 'Estudio Greffier'
 );

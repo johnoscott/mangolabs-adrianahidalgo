@@ -384,7 +384,10 @@ ul.list li {
 	text-transform: uppercase;
 }
 
-
+.large {
+	font-family: 'AvenirLTStd55Roman';
+	width: 200px;
+}
 
 
 /* BOOKS LIST */
@@ -580,7 +583,6 @@ ul.news li .title {
 .detail h2 {
 	margin-bottom: 10px;
 	line-height: 1em;
-	font-family: 'AvenirLTStd85Heavy';
 }
 
 .detail .sidebar {
@@ -621,7 +623,7 @@ ul.news li .title {
 
 .detail ul.menu li a {
 	font-weight: normal;
-	padding: 5px 10px;
+	padding: 5px 10px 5px 4px;
 }
 
 .detail ul.menu li a.selected {
@@ -629,7 +631,13 @@ ul.news li .title {
 	background: #d2232a;
 	position: relative;
 	text-decoration: none;
+	border-top: 2px solid #d2232a;
+	border-left: 8px solid #d2232a;
+	border-bottom: 8px solid #f5f1e8;
+	border-right: 0;
 }
+
+
 
 .detail .quote {
 	text-align: center;
@@ -639,12 +647,13 @@ ul.news li .title {
 
 .detail .quote .citation {
 	font-size: 24px;
-	line-height: 1;
+	line-height: 1.25;
 }
 
 .detail .quote .talker {
 	font-size: 18px;
 	line-height: 1.5;
+	opacity: 0.7;
 }
 
 .detail .ctime {
@@ -712,4 +721,11 @@ ul.news li .title {
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+
+/* Staff */
+
+.staff {
+    font-size: 14px;
 }

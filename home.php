@@ -7,8 +7,6 @@ session_start();
 include('includes/loader.inc.php');
 
 
-// Incluyo datos ficticios utiles para el desarrollo
-include('includes/data.inc.php');
 
 
 
@@ -30,18 +28,6 @@ $sections = array(
 				'alias' => 'Portada',
 				'url' => 'inicio/portada/',
 				'control' => 'inicio.php'
-			)
-		)
-	),
-	'institucional' => array(
-		'alias' => 'Institucional',
-		'url' => 'institucional/',
-		'control' => 'staff.php',
-		'sub' => array(
-			'staff' => array(
-				'alias' => 'Staff',
-				'url' => 'institucional/staff/',
-				'control' => 'staff.php'
 			)
 		)
 	),
@@ -153,6 +139,18 @@ $sections = array(
 				'alias' => '2010',
 				'url' => 'noticias/2010/',
 				'control' => 'noticias.php'
+			)
+		)
+	),
+	'institucional' => array(
+		'alias' => 'Institucional',
+		'url' => 'institucional/',
+		'control' => 'staff.php',
+		'sub' => array(
+			'staff' => array(
+				'alias' => 'Staff',
+				'url' => 'institucional/staff/',
+				'control' => 'staff.php'
 			)
 		)
 	),
