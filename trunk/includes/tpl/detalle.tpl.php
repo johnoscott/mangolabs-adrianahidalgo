@@ -31,10 +31,10 @@
 			<!-- Tab menu -->
 			<ul class="menu" data-role="tabs">
 				<strong>
-					<li><a data-content="ficha" class="selected">Ficha</a></li>
-					<li><a data-content="autor">Autor</a></li>
-					<li><a data-content="descarga">Descarga</a></li>
-					<li><a data-content="prensa">Prensa</a></li>
+					<li><a data-content="ficha" class="selected"><span>Ficha</span></a></li>
+					<li><a data-content="autor"><span>Autor</span></a></li>
+					<li><a data-content="descarga"><span>Descarga</span></a></li>
+					<li><a data-content="prensa"><span>Prensa</span></a></li>
 				</strong>
 			</ul>
 			
