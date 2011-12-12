@@ -11,6 +11,7 @@
 
 <!-- Reset     --> 				<link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen" charset="utf-8" />
 <!-- Styles    --> 				<link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen" charset="utf-8" />
+<!-- Styles    --> 				<link rel="stylesheet" href="/css/jquery.lightbox-0.5.css" type="text/css" media="screen" charset="utf-8" />
 
 
 <!-- FONTS
@@ -25,6 +26,7 @@
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="/js/jquery.lightbox-0.5.js"></script>
 <script src="/js/global.js"></script>
 
 
@@ -47,7 +49,7 @@
 	
 	<div class="toolbar">
 		<form id="form-search" action="/web/busqueda/titulo/" method="post">
-			<div>ENGLISH | MAPA DEL SITIO | CONTACTO</div>
+			<div>ENGLISH | MAPA DEL SITIO | <a href="/web/contacto/">CONTACTO</a></div>
 			<div class="cart">
 				<div class="left">
 					<a href="/web/shop/items/">Mis compras</a>

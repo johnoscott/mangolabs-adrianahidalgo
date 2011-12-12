@@ -10,6 +10,11 @@
 		'key'		=> 'id_prensa',
 	);
 
+	$path = 'uploads/prensa/';
+
+	if (!is_dir(preg_replace('/^(.+?)\/$/', '\\1', CONFIG_DOCUMENT_ROOT.$path)))
+		mkdir(preg_replace('/^(.+?)\/$/', '\\1', CONFIG_DOCUMENT_ROOT.$path), 0777, true);
+
 	if ($_POST['data']) {
 	
 		foreach ($_POST['data'] as $tabla => $campos) {
@@ -17,6 +22,18 @@
 				$db->update($tabla, $campos);
 			else
 				$db->insert($tabla, $campos);
+
+			// Subo los archivos
+			if ($_FILES)
+				foreach ($_FILES as $file) {
+					foreach ($file['tmp_name'] as $file_table => $data2)
+						foreach ($data2 as $file_campo => $tmp_name) {
+							// Subo el archivo fisico
+							move_uploaded_file($tmp_name, CONFIG_DOCUMENT_ROOT.$path.$_POST['data'][$tabla][$config['key']].'.jpg');
+							// Actualizo el campo en la base de datos
+							$db->update($tabla, array_merge($campos, array($file_campo => $_POST['data'][$tabla][$config['key']].'.jpg')));
+						}
+				}
 		}
 
 		// Redirecciono
@@ -125,6 +142,15 @@
 											<option value="<?=$key?>" <?=($key == $row['id_libro'])? 'selected="selected"' : '' ?> ><?=ucfirst($val)?></option>
 										<? endforeach; ?>
 									</select>
+								</p>
+							</li>
+
+							<!-- file -->
+							<li>
+								<p><label for="form-imagen">Imagen</label></p>
+								<p>
+									<input type="file" id="form-imagen" name="data[<?=$config['modulo']?>][imagen]" value=""/>
+									<?=($row['imagen'])? '<a href="'.CONFIG_SITE_URL.$path.$row['imagen'].'" target="_blank">[Ver imagen actual]</a> <!--<a href="">[borrar imagen actual]</a>-->' : ''?>
 								</p>
 							</li>
 

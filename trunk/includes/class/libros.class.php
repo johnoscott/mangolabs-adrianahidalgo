@@ -100,7 +100,13 @@ class Libros extends Core {
 		$db = ($this)? $this->db : ez_sql::getInstance();
 
 		// Busco las notas de prensa
-		$prensa = $db->get_results("SELECT p.* FROM prensa p WHERE id_libro = '$id_libro'");
+		$prensa = array();
+		if ($_prensas = $db->get_results("SELECT p.* FROM prensa p WHERE id_libro = '$id_libro'"))
+			foreach ($_prensas as $_prensa) {
+				$prensa[$_prensa['id_prensa']] = $_prensa;
+				if ($_prensa['imagen'])
+					$prensa[$_prensa['id_prensa']]['imagen'] = '/uploads/prensa/'.$_prensa['imagen'];
+			}
 
 		return $prensa;
 	}

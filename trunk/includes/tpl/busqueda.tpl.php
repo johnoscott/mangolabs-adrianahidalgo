@@ -3,7 +3,7 @@
 
 	<? #include('includes/tpl/sidebar.tpl.php'); ?>
 	
-	<div class="main catalogo">
+	<div class="main catalogo" style="margin-left: 0;">
 
 		
 		
@@ -49,7 +49,7 @@
 		
 		<? if ($section == 'titulo'): ?>
 		
-			<ul><li class="resultados">Se encontraron <?=$resultados?> resultados con la palabra "<?=$_REQUEST['params']?>"</li></ul>
+			<div class="resultados">Se encontraron <?=$resultados?> resultados con la palabra "<?=$_REQUEST['params']?>"</div>
 			<hr>
 
 			<!-- Listado -->
