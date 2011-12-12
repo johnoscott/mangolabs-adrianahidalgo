@@ -729,3 +729,38 @@ ul.news li .title {
 .staff {
     font-size: 14px;
 }
+
+
+/* Staff */
+
+.countries {
+	background: #D2232A;
+	padding-left: 30px;
+}
+
+.countries .logo {
+	margin-bottom: 1em;
+	display: block;
+	height: 77px;
+	padding-top: 27px;
+	background: url('/img/adriana-hidalgo-countries.png') no-repeat left top;
+	margin-top: 30px;
+}
+
+.countries ul {
+	font-size: 15px;
+	font-family: 'AvenirLTStd85Heavy';
+	margin-top: 40px;
+}
+
+.countries li {
+	margin-right: 0.5em;
+	text-transform: uppercase;
+	text-align: left;
+	margin-left: 50px;
+	margin-bottom: 5px;
+}
+
+.countries a {
+	color: #ffffff;
+}
