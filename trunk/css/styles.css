@@ -707,6 +707,7 @@ ul.news li .title {
 
 .pipala .detail ul.menu li a.selected {
 	background: #00A08C;
+	border-color: #00A08C -moz-use-text-color #F5F1E8 #00A08C;
 }
 
 .pipala .button {
