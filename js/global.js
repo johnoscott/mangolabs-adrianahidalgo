@@ -29,10 +29,10 @@ $(function() {
 		window.location.href = '/web/catalogo/titulo/' + letra;
 	});
 
+	// Lightbox
+	$('.ligthbox').lightBox(); // Select all links that contains lightbox in the attribute rel
 
-
-	
-	
+//alert($('a[@rel*=lightbox]'));	
 
 // Equal Height	
 /*

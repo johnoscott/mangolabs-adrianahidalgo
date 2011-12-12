@@ -35,6 +35,9 @@ Rewriterule ^web/libro/([0-9]+)/?$ /home.php?tab=catalogo&id=$1&short=detalle
 # Caso Short URL -> /caso/[ID]
 Rewriterule ^web/destacado/([0-9]+)/?$ /home.php?tab=catalogo&id=$1&short=detalle&destacado=1
 
+# Caso Short URL -> /caso/[ID]
+Rewriterule ^web/contacto/?$ /home.php?tab=contacto&id=$1&short=contacto
+
 
 #### GENERAL
 

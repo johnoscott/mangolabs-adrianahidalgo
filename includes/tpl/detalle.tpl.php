@@ -82,7 +82,7 @@
 			<div id="prensa" class="tab hide">
 				<? foreach($libro['prensa'] as $opinion):?>
 				<div class="margin quote avenir55">
-					<p class="citation">&#8220;<?=$opinion['comentario']?>&#8221;</p>
+					<p class="citation"><?=($opinion['imagen'] && is_file(CONFIG_DOCUMENT_ROOT.$opinion['imagen']))? '<a class="ligthbox" href="'.$opinion['imagen'].'">&#8220;'.$opinion['comentario'].'&#8221;</a>' : '&#8220;'.$opinion['comentario'].'&#8221;' ?></p>
 					<p class="talker"><?=$opinion['emisor']?><br><em>- <?=$opinion['medio']?> -</em></p>
 				</div>
 				<? endforeach; ?>
