@@ -36,4 +36,11 @@ $admin = array (
 
 $Usuario = Usuario::getInstance();
 
+// Si me mando el pais lo seteo
+if (isset($_GET['country']) && ($_GET['country'] == 'es'))
+	$Session->set('country', 'es');
+// Pais por defecto: argentina
+if (!$Session->get('country'))
+	$Session->set('country', 'ar');
+
 ?>

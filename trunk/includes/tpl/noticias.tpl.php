@@ -16,6 +16,13 @@
 				<? else: ?>
 					<img class="new" src="/uploads/novedades/<?=$noticia['imagen']?>" />
 				<? endif; ?>
+
+				<div class="social">
+					<a title="Compartir en Facebook" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=<?=urlencode(CONFIG_SITE_URL . $_SERVER['REQUEST_URI'])?>"><img src="/img/facebook.png"/></a>
+					<a title="Compartir en Twitter" target="_blank" href="http://twitter.com/home?status=<?=urlencode('Recomiendo el libro ' . $libro['titulo'] . ': ' . CONFIG_SITE_URL . $_SERVER['REQUEST_URI'])?>"><img src="/img/twitter.png"/></a>
+					<img src="/img/email.png"/>
+				</div>
+
 				<hr>
 				<div>
 					<?=$noticia['contenido']?>
