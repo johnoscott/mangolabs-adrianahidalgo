@@ -1,7 +1,7 @@
 
 <div class="content">
 
-	<? include('includes/tpl/sidebar.tpl.php'); ?>
+	<? #include('includes/tpl/sidebar.tpl.php'); ?>
 	
 	<div class="main catalogo">
 
@@ -49,7 +49,7 @@
 		
 		<? if ($section == 'titulo'): ?>
 		
-			<ul><li>Resultados para la busqueda de "<?=$_REQUEST['params']?>"</li></ul>
+			<ul><li class="resultados">Se encontraron <?=$resultados?> resultados con la palabra "<?=$_REQUEST['params']?>"</li></ul>
 			<hr>
 
 			<!-- Listado -->
