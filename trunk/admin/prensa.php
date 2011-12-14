@@ -20,8 +20,10 @@
 
 	// Obtengo el listado
 	if ($listado = $db->get_results("SELECT p.id_prensa, l.titulo, p.comentario, p.emisor, p.medio FROM prensa p LEFT JOIN libros l ON p.id_libro = l.id_libro ORDER BY l.titulo"))
-		foreach ($listado as $l)
+		foreach ($listado as $l) {
 			$data['listado'][$l['id_prensa']] = $l;
+			$data['listado'][$l['id_prensa']]['comentario'] = substr($l['comentario'], 0, 200).'...';
+		}
 
 ?>
 <!DOCTYPE html>
