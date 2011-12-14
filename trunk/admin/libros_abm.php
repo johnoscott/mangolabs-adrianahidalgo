@@ -28,10 +28,12 @@
 				foreach ($_FILES as $file) {
 					foreach ($file['tmp_name'] as $file_table => $data2)
 						foreach ($data2 as $file_campo => $tmp_name) {
-							// Subo el archivo fisico
-							move_uploaded_file($tmp_name, CONFIG_DOCUMENT_ROOT.$path.$_POST['data'][$tabla][$config['key']].'.jpg');
-							// Actualizo el campo en la base de datos
-							$db->update($tabla, array_merge($campos, array($file_campo => $_POST['data'][$tabla][$config['key']].'.jpg')));
+							if (!empty($tmp_name)) {
+								// Subo el archivo fisico
+								move_uploaded_file($tmp_name, CONFIG_DOCUMENT_ROOT.$path.$_POST['data'][$tabla][$config['key']].'.jpg');
+								// Actualizo el campo en la base de datos
+								$db->update($tabla, array_merge($campos, array($file_campo => $_POST['data'][$tabla][$config['key']].'.jpg')));
+							}
 						}
 				}
 		}
