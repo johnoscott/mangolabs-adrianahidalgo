@@ -1,11 +1,26 @@
 
 <? if ($pipala): ?>
 
-<div class="animacion">
+<script language="JavaScript" src="/js/flash.js"></script>
+<script language="JavaScript">
+	function toggleVisibility(demo){
+		if (demo.style.visibility=="hidden"){
+			demo.style.visibility="visible";
+			}
+		else {
+			demo.style.visibility="hidden";
+			}
+		}
+</script>
+
+<div class="animacion" id="demo">
+<script>CreaSwf('/img/pipala.swf','960','800','');</script>
+<!--
 	<object type="application/x-shockwave-flash" data="/img/pipala.swf" width="960" height="800" wmode="transparent">
 		<param name="movie" value="/img/pipala.swf"/>
 		<param name="wmode" value="transparent"/>
 	</object>
+-->
 </div>
 
 <? endif; ?>
@@ -28,12 +43,19 @@
 				
 				<ul class="list">
 				
-					<? foreach($colecciones as $coleccion): ?>
+					<? foreach($colecciones as $coleccion): 
+
+							if (strtolower($coleccion['nombre']) == 'pipala') {
+								$pipala_row = $coleccion; 
+								continue;
+							}
+					?>
 					
 						<li><a href="/web/catalogo/coleccion/<?=$coleccion['id_coleccion']?>"><?=$coleccion['nombre']?></a></li>
 					
 					<? endforeach; ?>
 					
+					<li><a href="/web/catalogo/coleccion/<?=$pipala_row['id_coleccion']?>"><img src="/img/logo_pipala.png"></a></li>
 				</ul>
 				
 			<? else: ?>

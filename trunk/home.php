@@ -60,6 +60,23 @@ $sections = array(
 			)
 		)		
 	),
+	'prensa' => array(
+		'alias' => 'Prensa',
+		'url' => 'prensa/',
+		'control' => 'prensa.php',
+		'sub' => array(
+			'institucional' => array(
+				'alias' => 'Institucional',
+				'url' => 'prensa/',
+				'control' => 'prensa.php'
+			),
+			'porlibro' => array(
+				'alias' => 'Por Libro',
+				'url' => 'catalogo/titulo/',
+				'control' => 'prensa.php'
+			)
+		)
+	),
 	'foreignrights' => array(
 		'alias' => 'Foreign Rights',
 		'url' => 'foreignrights/',
@@ -82,24 +99,21 @@ $sections = array(
 				'url' => 'distribucion/argentina/',
 				'control' => 'distribucion.php'
 			),
-			'espana' => array(
-				'alias' => 'Espa&ntilde;a',
-				'url' => 'distribucion/espana/',
+			'bolivia' => array(
+				'alias' => 'Bolivia',
+				'url' => 'distribucion/bolivia/',
 				'control' => 'distribucion.php'
 			),
-			'mexico' => array(
-				'alias' => 'M&eacute;xico',
-				'url' => 'distribucion/mexico/',
+			'brasil' => array(
+				'alias' => 'Brasil',
+				'url' => 'distribucion/brasil/',
 				'control' => 'distribucion.php'
 			),
+
+
 			'chile' => array(
 				'alias' => 'Chile',
 				'url' => 'distribucion/chile/',
-				'control' => 'distribucion.php'
-			),
-			'uruguay' => array(
-				'alias' => 'Uruguay',
-				'url' => 'distribucion/uruguay/',
 				'control' => 'distribucion.php'
 			),
 			'colombia' => array(
@@ -107,9 +121,29 @@ $sections = array(
 				'url' => 'distribucion/colombia/',
 				'control' => 'distribucion.php'
 			),
+			'costarica' => array(
+				'alias' => 'Costa Rica',
+				'url' => 'distribucion/costarica/',
+				'control' => 'distribucion.php'
+			),
+			'ecuador' => array(
+				'alias' => 'Ecuador',
+				'url' => 'distribucion/ecuador/',
+				'control' => 'distribucion.php'
+			),
+			'espana' => array(
+				'alias' => 'Espa&ntilde;a',
+				'url' => 'distribucion/espana/',
+				'control' => 'distribucion.php'
+			),
 			'guatemala' => array(
 				'alias' => 'Guatemala',
 				'url' => 'distribucion/guatemala/',
+				'control' => 'distribucion.php'
+			),
+			'mexico' => array(
+				'alias' => 'M&eacute;xico',
+				'url' => 'distribucion/mexico/',
 				'control' => 'distribucion.php'
 			),
 			'peru' => array(
@@ -117,11 +151,21 @@ $sections = array(
 				'url' => 'distribucion/peru/',
 				'control' => 'distribucion.php'
 			),
-			'costarica' => array(
-				'alias' => 'Costa Rica',
-				'url' => 'distribucion/costarica/',
+			'puertorico' => array(
+				'alias' => 'Puerto Rico',
+				'url' => 'distribucion/puertorico/',
 				'control' => 'distribucion.php'
-			)
+			),
+			'uruguay' => array(
+				'alias' => 'Uruguay',
+				'url' => 'distribucion/uruguay/',
+				'control' => 'distribucion.php'
+			),
+			'venezuela' => array(
+				'alias' => 'Venezuela',
+				'url' => 'distribucion/venezuela/',
+				'control' => 'distribucion.php'
+			),
 		)		
 	),
 	'noticias' => array(

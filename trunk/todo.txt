@@ -1,0 +1,14 @@
+
+- Ajustes en el listado de libros
+* Agregar modulo de noticias en foreign rights y distribucion
+* Distribucion: agregar algunos paises, reordenarlos y agregar su contenido
+* Modificar el admin para poder seleccionar el orden de las colecciones (y separar pipala y ponerlo en png al final)
+* Modificar el admin para poder seleccionar el orden de los generos
+* Admin de prensa: Modificar el admin para poder agregar notas de prensa sin estar asociadas a un libro.
+* Seccion prensa: 2 visualizaciones: Institucional se muestra el listado de notas de prensa que no esten asociadas a ningun libro. Es el mismo tipo de listado que para noticias. La visualizacion por libro
+
+FALTA
+- Esperando la informacion de los distribuidores
+
+
+

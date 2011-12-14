@@ -12,14 +12,14 @@
 	// Almaceno la url del listado de este modulo para redireccionar despues del abm
 	$Session->set($config['modulo'].'_listado', $_SERVER['REQUEST_URI']);
 
-	$data['titles'] = array('Codigo', 'Nombre', 'Descripcion');
+	$data['titles'] = array('Codigo', 'Nombre', 'Orden', 'Descripcion');
 
 	// Borro el registro
 	if ($_GET['delete'])
 		$db->query("DELETE FROM colecciones WHERE id_coleccion = '".addslashes($_GET['delete'])."'");
 
 	// Obtengo el listado
-	if ($listado = $db->get_results("SELECT id_coleccion, nombre, descripcion FROM colecciones WHERE 1=1 ORDER BY nombre"))
+	if ($listado = $db->get_results("SELECT id_coleccion, nombre, orden, descripcion FROM colecciones WHERE 1=1 ORDER BY orden DESC, nombre"))
 		foreach ($listado as $l)
 			$data['listado'][$l['id_coleccion']] = $l;
 

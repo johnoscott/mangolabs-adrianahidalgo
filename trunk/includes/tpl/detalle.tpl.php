@@ -32,9 +32,9 @@
 			<ul class="menu" data-role="tabs">
 				<strong>
 					<li><a data-content="ficha" class="selected"><span>Ficha</span></a></li>
-					<li><a data-content="autor"><span>Autor</span></a></li>
-					<li><a data-content="descarga"><span>Descarga</span></a></li>
-					<li><a data-content="prensa"><span>Prensa</span></a></li>
+					<li><a data-content="autor"><span>Autor</span><span class="piquito"></span></a></li>
+					<li><a data-content="descarga"><span>Descarga</span><span class="piquito"></span></a></li>
+					<li><a data-content="prensa"><span>Prensa</span><span class="piquito"></span></a></li>
 				</strong>
 			</ul>
 			
