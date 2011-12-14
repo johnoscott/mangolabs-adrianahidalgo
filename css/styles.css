@@ -777,6 +777,9 @@ ul.news li .title {
 	margin-left: 0pt;
 	width: 500px;
 }
+.foreignrights p {
+	font-size: 14px;
+}
 .distribucion {
 	display: block;
 	float: left;
