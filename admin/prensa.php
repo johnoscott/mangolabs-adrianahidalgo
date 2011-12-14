@@ -147,7 +147,7 @@
 										
 										<? if ($k != $data['key']): ?>
 										
-											<p><?=($v)?></p>
+											<p><?=strip_tags($v)?></p>
 										
 										<? endif; ?>
 									
