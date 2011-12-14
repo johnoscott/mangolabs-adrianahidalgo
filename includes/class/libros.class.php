@@ -12,7 +12,7 @@ class Libros extends Core {
 
 	static protected $instancia;
 	static protected $opciones = array(
-		'rpp' => 20, // Resultados por pagina 
+		'rpp' => 20000000, // Resultados por pagina 
 		'filtros' => array(), // Filtros para la funcion listar
 		'page' => 1, // Numero de pagina por defecto
 		'order' => array('l.titulo', 'DESC') // Ordenamiento de listar() con el tipo de ordenamiento (opcional)
