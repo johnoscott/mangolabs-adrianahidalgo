@@ -48,7 +48,7 @@ switch ($section) {
 		$colecciones = Colecciones::listar();
 		$params['coleccion'] = ($params['coleccion']) ? $params['coleccion'] : current($colecciones);
 		// Marcamos si es Pipala
-		if ($params['coleccion'] == 1)
+		if ($params['coleccion'] == 16)
 			$pipala = true;
 		break;
 }

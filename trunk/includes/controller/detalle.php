@@ -22,7 +22,7 @@ $params = $_SESSION['params'];
 $cabeceras = ${$section};
 
 // Marco si es un libro de Pipala
-if ($libro['id_coleccion'] == 1)
+if ($libro['id_coleccion'] == 16)
 	$pipala = true;
 
 /* Incluyo la interfaz
