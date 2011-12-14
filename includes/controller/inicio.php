@@ -3,13 +3,13 @@
 $Libros = new Libros();
 $listado = $Libros->listar(
 	array(
-		'filtros' => array("l.home = '1'", "l.id_coleccion != 1"),
+		'filtros' => array("l.home = '1'", "l.id_coleccion != 16"),
 		'rpp' => 4
 	)
 );
 $pipalas = $Libros->listar(
 	array(
-		'filtros' => array("l.home = '1'", "l.id_coleccion = 1"),
+		'filtros' => array("l.home = '1'", "l.id_coleccion = 16"),
 		'rpp' => 3
 	)
 );
