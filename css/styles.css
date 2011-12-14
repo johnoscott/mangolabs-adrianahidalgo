@@ -44,8 +44,8 @@ a:hover, a:active {
 }
 
 .container {
-	_width: 960px; /* IE6 */
-    max-width: 960px;
+	_width: 1020px; /* IE6 */
+    max-width: 1020px;
 	padding-left: 31px;
 	text-align: left;
 	position: relative;
@@ -270,7 +270,7 @@ pre {
     padding-left: 30px;
     position: fixed;
     text-align: left;
-    width: 960px;
+    width: 1020px;
     z-index: 1;
 }
 
@@ -549,8 +549,9 @@ ul.news li .title {
 }
 
 .pastilla {
-	background-image: url(/img/pastilla.png);
-	background-color: #d2232a;
+/*	background-image: url(/img/pastilla.png);*/
+	background-image: url(/img/pastilla2.png);
+/*	background-color: #d2232a;*/
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 72px;
@@ -628,15 +629,14 @@ ul.news li .title {
 
 .detail ul.menu li a.selected {
 	color: white;
-	background: #d2232a;
 	position: relative;
 	text-decoration: none;
 	border-top: 2px solid #d2232a;
 	border-left: 8px solid #d2232a;
 	border-bottom: 8px solid #f5f1e8;
+	background: #d2232a;
 	border-right: 0;
 }
-
 
 
 .detail .quote {
@@ -742,9 +742,9 @@ ul.news li .title {
 .countries .logo {
 	margin-bottom: 1em;
 	display: block;
-	height: 77px;
+	height: 97px;
 	padding-top: 27px;
-	background: url('/img/adriana-hidalgo-countries.png') no-repeat left top;
+	background: url('/img/adriana-hidalgo-countries.jpg') no-repeat left top;
 	margin-top: 30px;
 }
 
@@ -769,4 +769,21 @@ ul.news li .title {
 .resultados {
 	color: #D2232A;
 	font-size: 14px;
+}
+
+.foreignrights {
+	display: block;
+	float: left;
+	margin-left: 0pt;
+	width: 500px;
+}
+.distribucion {
+	display: block;
+	float: left;
+	margin-left: 0pt;
+	width: 500px;
+}
+
+.prensa .pastilla {
+	display: none;
 }
