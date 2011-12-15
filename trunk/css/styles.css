@@ -698,7 +698,8 @@ ul.news li .title {
 }
 
 .pipala .pastilla {
-	background-color: #00A08C;
+	background-image: url(/img/pastilla2-pipala.png);
+/*	background-color: #00A08C;*/
 }
 
 .pipala .pastilla a {
@@ -707,7 +708,7 @@ ul.news li .title {
 
 .pipala .detail ul.menu li a.selected {
 	background: #00A08C;
-	border-color: #00A08C -moz-use-text-color #F5F1E8 #00A08C;
+	border-color: #00A08C -moz-use-text-color #F1EAE2 #00A08C;
 }
 
 .pipala .button {

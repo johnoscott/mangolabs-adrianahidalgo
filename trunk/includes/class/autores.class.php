@@ -103,7 +103,7 @@ class Autores extends Core {
 		}
 
 		// Busco los productos
-		$query = "SELECT SQL_CALC_FOUND_ROWS a.*
+		$query = "SELECT SQL_CALC_FOUND_ROWS a.id_autor, a.nombre
 				FROM autores a
 				WHERE 1=1 $and
 				" . ($order? 'ORDER BY '.substr($order_by, 1) : '') . 

@@ -1,5 +1,7 @@
 
-- Ajustes en el listado de libros
+- Ajustes en la home: CAMBIAMOS la distribucion de los libros por esta. Fijate q son mas chicos, las tipografias de los titulos son mas 
+chicas y el espacio entre cada libro también se acorta. Tiene que quedar igual.
+
 * Agregar modulo de noticias en foreign rights y distribucion
 * Distribucion: agregar algunos paises, reordenarlos y agregar su contenido
 * Modificar el admin para poder seleccionar el orden de las colecciones (y separar pipala y ponerlo en png al final)
@@ -7,8 +9,92 @@
 * Admin de prensa: Modificar el admin para poder agregar notas de prensa sin estar asociadas a un libro.
 * Seccion prensa: 2 visualizaciones: Institucional se muestra el listado de notas de prensa que no esten asociadas a ningun libro. Es el mismo tipo de listado que para noticias. La visualizacion por libro
 
+
 FALTA
 - Esperando la informacion de los distribuidores
+
+- Foreign Rights y distribución, dejale el mismo tamaño a la tipo que tiene Institucional que se ve perfecto!
+- Ajustar el interlineado entre cada palabra! es para todas las secciones que tienen "subsección" digamos, 
+y que se listan arriba del circulito, se entiende? siqguen estando demasiado abiertas!
+
+
+
+*********************************************************************************************************************
+*********************************************************************************************************************
+
+IMPORTACION
+
+*Autores
+*Se importan Nombre completo, y Biografía.
+
+*Colecciones
+*Se importan Nombre y Descripción
+
+*Novedades
+*Se importan las novedades de la tabla "novedades". Se importan Fecha y Contenido, faltarían los Títulos, pero la tabla actual no 
+*tiene ese campo y la nueva si. Esto no se si es necesario porque veo muchas novedades que estan deshabilitadas (deben ser viejas)
+
+*Prensa
+*Hoy las notas de prensa estan todas asociadas a un libro, por lo que se importan de la tabla Prensas todas las notas que esten asociadas a 
+*algun libro. El formato actual de Prensa tiene un contenido corto que es el que se muestra. Se va a importar Cuerpo, Autor, Medio 
+*actuales como Comentario, Emisor y Medio en la nueva base.
+
+Libros
+Se importan Título, Subtítulo, Precio, ISBN, comentario_largo (la Descripción actual), Imagen.
+
+Géneros
+Lo más parecido que encontre a los géneros son las Subcolecciones. Se importan Nombre y Descripción de cada una (las descripciones están vacias)
+
+
+
+
+#autores
+INSERT INTO autores (id_autor, nombre, biografia) VALUES ;
+SELECT CONCAT("(", ID, ", '", nombre, ' ', apellido, "', '", REPLACE(comentario, "'", '"'), "'),") a
+FROM autores
+LIMIT 1000000000;
+
+#colecciones
+INSERT INTO colecciones (id_coleccion, nombre, descripcion, orden) VALUES ;
+SELECT CONCAT("(", ID, ", '", nombre, "', '", descripcion, "', ", orden, "),")
+FROM colecciones
+LIMIT 1000000000;
+
+#novedades
+INSERT INTO novedades (id_novedad, contenido, fecha) VALUES ;
+SELECT CONCAT("(", ID, ", '", novedad, "', '", fecha, "'),")
+FROM novedades
+LIMIT 1000000000;
+
+#prensa
+INSERT INTO prensa (id_coleccion, nombre, descripcion, orden) VALUES ;
+SELECT CONCAT("(", ID, ", '", REPLACE(cuerpo, "'", '"'), "', '", REPLACE(autor, "'", '"'), "', '", REPLACE(medio, "'", '"'), "'),")
+FROM prensas
+LIMIT 1000000000;
+
+#libros
+INSERT INTO prensa (comentario, emisor y medio) VALUES ;
+SELECT CONCAT("UPDATE prensa SET id_libro = ", libro, " WHERE id_prensa = ", prensa, " LIMIT 1;")
+FROM libroprensa
+LIMIT 1000000000;
+
+#prensa
+SELECT CONCAT("UPDATE prensa SET id_libro = ", libro, " WHERE id_prensa = ", prensa, " LIMIT 1;")
+FROM libroprensa
+LIMIT 1000000000;
+
+SELECT CONCAT("(", ID, ", '", REPLACE(IFNULL(titulo, ''), "'", '"'), "', '", REPLACE(IFNULL(subtitulo, ''), "'", '"'), "', '", IFNULL(precio, 0), 
+"', '", REPLACE(IFNULL(isbn, ''), "'", '"'), "', '", REPLACE(IFNULL(comentario_largo, ''), "'", '"'), "'),")
+FROM libros
+LIMIT 1000000000;
+
+SELECT CONCAT("UPDATE libros SET id_autor = '", autor, "' WHERE id_libro = ", ID, " LIMIT 1;")
+FROM libros
+WHERE 1=1
+LIMIT 10000000;
+
+
+
 
 
 

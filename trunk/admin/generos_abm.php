@@ -106,7 +106,7 @@
 					
 							<li>
 								<p><label for="form-nombre">Orden</label></p>
-								<p><input type="text" id="form-nombre" name="data[<?=$config['modulo']?>][orden]" value="<?=$row['orden']?>"/> (se ordena de mayor a menor)</p>
+								<p><input type="text" id="form-nombre" name="data[<?=$config['modulo']?>][orden]" value="<?=$row['orden']?>"/> (se ordena de menor a mayor)</p>
 							</li>
 					
 							<!-- text -->
