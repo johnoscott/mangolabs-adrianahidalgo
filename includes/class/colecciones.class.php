@@ -15,7 +15,7 @@ class Colecciones extends Core {
 		'rpp' => 20, // Resultados por pagina 
 		'filtros' => array(), // Filtros para la funcion listar
 		'page' => 1, // Numero de pagina por defecto
-		'order' => array('c.orden', 'DESC') // Ordenamiento de listar() con el tipo de ordenamiento (opcional)
+		'order' => array('c.orden', 'ASC') // Ordenamiento de listar() con el tipo de ordenamiento (opcional)
 	);
 	private $count = 0;
 	private $paginas = 0;

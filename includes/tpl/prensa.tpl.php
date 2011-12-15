@@ -10,11 +10,11 @@
 		<? if ($id): ?>
 			<div class="detail">
 				<p class="ctime"><?=$prensa['fecha']?></p>
-				<h2><?=$noticia['titulo']?></h2>
-				<? if ($noticia['video']): ?>
-					<iframe width="420" height="315" src="<?=$noticia['embed']?>" frameborder="0" allowfullscreen></iframe>
+				<h2><?=htmlentities($prensa['titulo'])?></h2>
+				<? if ($prensa['video']): ?>
+					<iframe width="420" height="315" src="<?=$prensa['embed']?>" frameborder="0" allowfullscreen></iframe>
 				<? else: ?>
-					<img class="new" src="/uploads/novedades/<?=$noticia['imagen']?>" />
+					<img class="new" src="/uploads/novedades/<?=$prensa['imagen']?>" />
 				<? endif; ?>
 
 				<div class="social">
@@ -25,7 +25,7 @@
 
 				<hr>
 				<div>
-					<?=$noticia['contenido']?>
+					<?=htmlentities($prensa['contenido'])?>
 				</div>
 			</div>
 		
@@ -36,8 +36,8 @@
 					<li>
 						<a class="ligthbox" href="<?=$prensa['imagen']?>">
 							<img src="<?=$prensa['imagen']?>">
-							<p class="ctime"><?=$prensa['emisor']?> - <?=$prensa['medio']?></p>
-							<p class="title"><?=$prensa['comentario']?></p>
+							<p class="ctime"><?=htmlentities($prensa['emisor'])?> - <?=htmlentities($prensa['medio'])?></p>
+							<p class="title"><?=htmlentities($prensa['comentario'])?></p>
 						</a>
 					</li>
 				<? endforeach; ?>

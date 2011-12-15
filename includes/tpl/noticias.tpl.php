@@ -10,7 +10,7 @@
 		<? if ($id): ?>
 			<div class="detail">
 				<p class="ctime"><?=$noticia['fecha']?></p>
-				<h2><?=$noticia['titulo']?></h2>
+				<h2><?=htmlentities($noticia['titulo'])?></h2>
 				<? if ($noticia['video']): ?>
 					<iframe width="420" height="315" src="<?=$noticia['embed']?>" frameborder="0" allowfullscreen></iframe>
 				<? else: ?>
@@ -25,7 +25,7 @@
 
 				<hr>
 				<div>
-					<?=$noticia['contenido']?>
+					<?=htmlentities($noticia['contenido'])?>
 				</div>
 			</div>
 		
@@ -37,7 +37,7 @@
 						<a href="/web/noticias/<?=$section?>/<?=$noticia['id_novedad']?>">
 							<img src="/uploads/novedades/<?=$noticia['imagen']?>">
 							<p class="ctime"><?=$noticia['fecha']?></p>
-							<p class="title"><?=$noticia['titulo']?></p>
+							<p class="title"><?=htmlentities($noticia['titulo'])?></p>
 						</a>
 					</li>
 				<? endforeach; ?>

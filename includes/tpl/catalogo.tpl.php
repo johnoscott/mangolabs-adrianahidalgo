@@ -115,7 +115,7 @@
 				<hr>
 				<ul>
 					<? foreach($autores as $key => $autor): ?>
-						<li <? if ($autor['nombre'][0] != $params['autor']): ?> class="hide" <? endif; ?> data-letra="<?=$autor['nombre'][0]?>"><a href="/web/catalogo/autor/<?=$key?>"><?=$autor['nombre']?></a></li>
+						<li <? if (strtolower($autor['nombre'][0]) != strtolower($params['autor'])): ?> class="hide" <? endif; ?> data-letra="<?=$autor['nombre'][0]?>"><a href="/web/catalogo/autor/<?=$key?>"><?=htmlentities($autor['nombre'])?></a></li>
 					<? endforeach; ?>
 				</ul>
 				

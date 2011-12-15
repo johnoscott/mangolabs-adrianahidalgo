@@ -8,8 +8,8 @@
 	
 		<!-- Cabecera -->
 		<? if ($cabeceras): ?>
-			<h2 class="selected"><?=$cabeceras['nombre']?></h2>
-			<h5><?=$cabeceras['descripcion']?></h5><hr>
+			<h2 class="selected"><?=htmlentities($cabeceras['nombre'])?></h2>
+			<h5><?=htmlentities($cabeceras['descripcion'])?></h5><hr>
 		<? endif; ?>
 		
 		
@@ -42,22 +42,22 @@
 			<!-- Tab 1: Ficha -->
 			<div id="ficha" class="tab">
 				<div class="uppercase">
-					<h5 class="author"><?=$libro['autor']?></h5>
-					<h2 class="avenir85"><?=$libro['titulo']?></h2>
+					<h5 class="author"><?=htmlentities($libro['autor'])?></h5>
+					<h2 class="avenir85"><?=htmlentities($libro['titulo'])?></h2>
 					<div>
 						<p class="price">$ <?=$libro['precio']?> .-</p>
 						<div class="buttonbar"><button class="button">A&ntilde;adir a la bolsa de compras</button></div>
-						<p><?=$libro['subtitulo']?></p>
+						<p><?=htmlentities($libro['subtitulo'])?></p>
 						<ul>
-							<li>Colecci&oacute;n: <?=$libro['coleccion']?></li>
-							<li>G&eacute;nero: <?=$libro['genero']?></li>
+							<li>Colecci&oacute;n: <?=htmlentities($libro['coleccion'])?></li>
+							<li>G&eacute;nero: <?=htmlentities($libro['genero'])?></li>
 							<li>ISBN: <?=$libro['isbn']?></li>
 						</ul>
 					</div>
 				</div>
 				<hr>
 				<div>
-					<?=$libro['descripcion']?>
+					<?=htmlentities($libro['descripcion'])?>
 				</div>
 			</div>
 			
@@ -65,7 +65,7 @@
 			
 			<!-- Tab 2: Autor -->
 			<div id="autor" class="tab hide">
-				<h2 class="margin selected"><?=$libro['autor']?></h2>
+				<h2 class="margin selected"><?=htmlentities($libro['autor'])?></h2>
 				<?=$libro['biografia']?>
 			</div>
 			
@@ -82,8 +82,8 @@
 			<div id="prensa" class="tab hide">
 				<? foreach($libro['prensa'] as $opinion):?>
 				<div class="margin quote avenir55">
-					<p class="citation"><?=($opinion['imagen'] && is_file(CONFIG_DOCUMENT_ROOT.$opinion['imagen']))? '<a class="ligthbox" href="'.$opinion['imagen'].'">&#8220;'.$opinion['comentario'].'&#8221;</a>' : '&#8220;'.$opinion['comentario'].'&#8221;' ?></p>
-					<p class="talker"><?=$opinion['emisor']?><br><em>- <?=$opinion['medio']?> -</em></p>
+					<p class="citation"><?=($opinion['imagen'] && is_file(CONFIG_DOCUMENT_ROOT.$opinion['imagen']))? '<a class="ligthbox" href="'.$opinion['imagen'].'">&#8220;'.htmlentities($opinion['comentario']).'&#8221;</a>' : '&#8220;'.htmlentities($opinion['comentario']).'&#8221;' ?></p>
+					<p class="talker"><?=htmlentities($opinion['emisor'])?><br><em>- <?=htmlentities($opinion['medio'])?> -</em></p>
 				</div>
 				<? endforeach; ?>
 			</div>
