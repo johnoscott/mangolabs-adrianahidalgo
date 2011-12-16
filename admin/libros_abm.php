@@ -167,6 +167,12 @@
 								<p><input type="text" id="form-isbn" name="data[<?=$config['modulo']?>][isbn]" value="<?=$row['isbn']?>"/></p>
 							</li>
 
+							<!-- text -->
+							<li>
+								<p><label for="form-isbn">ISBN ESPA&Ntilde;A</label></p>
+								<p><input type="text" id="form-isbn" name="data[<?=$config['modulo']?>][isbn_es]" value="<?=$row['isbn_es']?>"/></p>
+							</li>
+
 							<!-- file -->
 							<li>
 								<p><label for="form-imagen">Imagen</label></p>

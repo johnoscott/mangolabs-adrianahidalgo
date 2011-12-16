@@ -51,7 +51,7 @@
 						<ul>
 							<li>Colecci&oacute;n: <?=htmlentities($libro['coleccion'])?></li>
 							<li>G&eacute;nero: <?=htmlentities($libro['genero'])?></li>
-							<li>ISBN: <?=$libro['isbn']?></li>
+							<li>ISBN: <?=($Session->get('country') == 'es')? $libro['isbn_es'] : $libro['isbn']?></li>
 						</ul>
 					</div>
 				</div>
