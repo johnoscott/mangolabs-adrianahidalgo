@@ -736,26 +736,38 @@ ul.news li .title {
 /* Staff */
 
 .countries {
-	background: #D2232A;
+	background: #f2f0e8 url(/img/fondo.jpg);
+	color: #595959;
 	padding-left: 30px;
 }
-
+.countries div {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 150px;
+}
 .countries .logo {
 	margin-bottom: 1em;
 	display: block;
-	height: 97px;
+	height: 120px;
 	padding-top: 27px;
-	background: url('/img/adriana-hidalgo-countries.jpg') no-repeat left top;
+    background: url("/img/logo-countries.png") no-repeat scroll center top transparent;
 	margin-top: 30px;
 }
 
+.countries .country-list {
+	width: 330px;
+	margin: 0 auto;
+}
+
 .countries ul {
+	list-style: disc;
 	font-size: 15px;
 	font-family: 'AvenirLTStd85Heavy';
 	margin-top: 40px;
 }
 
 .countries li {
+	color: #D2232A;
 	margin-right: 0.5em;
 	text-transform: uppercase;
 	text-align: left;
@@ -764,7 +776,8 @@ ul.news li .title {
 }
 
 .countries a {
-	color: #ffffff;
+	color: #D2232A;
+/*	color: #ffffff;*/
 }
 
 .resultados {

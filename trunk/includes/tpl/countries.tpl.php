@@ -36,11 +36,12 @@
 
 	<div class="logo"></div>
 
-	<ul>
-		<li><a href="/web/?country=ar">&gt; ARGENTINA Y AM&Eacute;RICA LATINA</a></li>
-		<li><a href="/web/?country=es">&gt; ESPA&Ntilde;a</a></li>
-	</ul>
-
+	<div class="country-list">
+		<ul>
+			<li><a href="/web/?country=ar">ARGENTINA Y AM&Eacute;RICA LATINA</a></li>
+			<li><a href="/web/?country=es">ESPA&Ntilde;a</a></li>
+		</ul>
+	</div>
 </div>
 
 </body>
