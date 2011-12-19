@@ -478,6 +478,7 @@ ul.catalog li {
     width: 50%;
 	text-transform: uppercase;
 	height: 200px;
+	word-wrap: break-word;
 }
 
 ul.catalog li img {
