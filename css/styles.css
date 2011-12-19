@@ -477,6 +477,7 @@ ul.catalog li {
     margin-bottom: 25px;
     width: 50%;
 	text-transform: uppercase;
+	height: 200px;
 }
 
 ul.catalog li img {
