@@ -491,7 +491,9 @@ ul.catalog li .title {
 	font-size: 25px;
 	font-family: 'AvenirLTStd85Heavy';
 	line-height: 25px;
-	width: 90%;
+	/*width: 90%;*/
+	width: 400px;
+	word-wrap: break-word;
 }
 
 ul.catalog li .price {
