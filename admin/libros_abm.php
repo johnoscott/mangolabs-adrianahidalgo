@@ -146,7 +146,7 @@
 
 							<!-- select -->
 							<li>
-								<p><label for="form-home">Mostrar en la home</label></p>
+								<p><label for="form-home">Novedades</label></p>
 								<p>
 									<select id="form-home" name="data[<?=$config['modulo']?>][home]">
 										<option value="0" <?=($row['home'] == 0)? 'selected="selected"' : '' ?> >no</option>
