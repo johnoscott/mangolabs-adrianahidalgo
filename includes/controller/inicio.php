@@ -4,18 +4,21 @@ $Libros = new Libros();
 $listado = $Libros->listar(
 	array(
 		'filtros' => array("l.home = '1'", "l.id_coleccion != 16"),
+		'order' => array(array('l.ctime', 'DESC'), array('l.titulo', 'DESC')),
 		'rpp' => 4
 	)
 );
 $pipalas = $Libros->listar(
 	array(
 		'filtros' => array("l.home = '1'", "l.id_coleccion = 16"),
+		'order' => array(array('l.ctime', 'DESC'), array('l.titulo', 'DESC')),
 		'rpp' => 3
 	)
 );
 $reediciones = $Libros->listar(
 	array(
 		'filtros' => array("l.reedicion = 1"),
+		'order' => array(array('l.ctime', 'DESC'), array('l.titulo', 'DESC')),
 		'rpp' => 4
 	)
 );
