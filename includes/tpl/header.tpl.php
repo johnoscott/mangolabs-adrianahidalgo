@@ -55,8 +55,8 @@
 					<a href="/web/shop/items/">Mis compras</a>
 					<a href="/web/shop/checkout/">Checkout</a>
 				</div>
-				<div class="bag">2</div>
-				<div class="pay">$ 79,00</div>
+				<div class="bag">0</div>
+				<div class="pay">$ 00,00</div>
 			</div>
 			<input type="text" placeholder="Buscar..." name="search">
 		</form>
