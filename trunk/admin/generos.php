@@ -19,7 +19,7 @@
 		$db->query("DELETE FROM generos WHERE id_genero = '".addslashes($_GET['delete'])."'");
 
 	// Obtengo el listado
-	if ($listado = $db->get_results("SELECT id_genero, nombre, orden, descripcion FROM generos WHERE 1=1 ORDER BY orden DESC, nombre"))
+	if ($listado = $db->get_results("SELECT id_genero, nombre, orden, descripcion FROM generos WHERE 1=1 ORDER BY orden ASC, nombre"))
 		foreach ($listado as $l)
 			$data['listado'][$l['id_genero']] = $l;
 
