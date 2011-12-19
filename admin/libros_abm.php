@@ -155,6 +155,17 @@
 								</p>
 							</li>
 
+							<!-- select -->
+							<li>
+								<p><label for="form-reedicion">Reedicion</label></p>
+								<p>
+									<select id="form-reedicion" name="data[<?=$config['modulo']?>][reedicion]">
+										<option value="0" <?=($row['reedicion'] == 0)? 'selected="selected"' : '' ?> >no</option>
+										<option value="1" <?=($row['reedicion'] == 1)? 'selected="selected"' : '' ?> >si</option>
+									</select>
+								</p>
+							</li>
+
 							<!-- text -->
 							<li>
 								<p><label for="form-precio">Precio</label></p>
