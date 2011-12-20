@@ -18,6 +18,7 @@ $Novedades = new Novedades();
 $noticias = $Novedades->listar(
         array(
                 'filtros' => array('year' => 'EXTRACT(YEAR FROM n.ctime) = ' . $year),
+                'order' => array('n.ctime', 'DESC'),
                 'rpp' => 2
         )
 );
