@@ -37,7 +37,7 @@
 						<a href="/web/prensa/institucional/<?=$prensa['id_prensa']?>">
 							<img src="<?=$prensa['imagen']?>">
 							<p class="ctime"><?=htmlentities($prensa['emisor'])?> - <?=htmlentities($prensa['medio'])?></p>
-							<p class="title"><?=htmlentities(substr(strip_tags($prensa['comentario']), 0, 17))?>...</p>
+							<p class="title"><?=htmlentities(substr(strip_tags($prensa['comentario']), 0, 85))?>...</p>
 						</a>
 					</li>
 				<? endforeach; ?>
