@@ -444,19 +444,23 @@ ul.books > li .price {
 .init ul.news {
 	overflow: auto;
 	border-left: 1px solid #CFCDBA;
-	height: 330px;
 }
 
 .init ul.news li {
 	width: auto;
 	float: none;
 	margin-left: 10px;
+	text-align: center;
 }
 
 .init ul.news li img {
-	width: 150px;
+	height: 118px;
+	width: auto;
 }
 
+.init ul.news p {
+	text-align: left;
+}
 .init ul.news .title {
 	font-size: 13px;
 	text-transform: none;
