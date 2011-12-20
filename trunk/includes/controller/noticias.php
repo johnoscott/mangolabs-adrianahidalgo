@@ -25,6 +25,7 @@ if ($_REQUEST['params']) {
 	$opciones  = array(
 		'rpp' => ($params['items']) ? $params['items'] : 100,
 		'page' => ($params['pagina']) ? $params['pagina'] : 1,
+                'order' => array('n.ctime', 'DESC'),
 		'filtros' => array('year' => 'EXTRACT(YEAR FROM n.ctime) = ' . $section)
 	);
 
