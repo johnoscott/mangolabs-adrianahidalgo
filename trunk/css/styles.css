@@ -516,12 +516,17 @@ ul.news li {
     margin-bottom: 25px;
     margin-left: 24px;
     width: 30%;
+    text-align: center;
 }
 
 ul.news li img {
 	height: 118px;
 	width: auto;
 	background: #DDD;
+}
+
+ul.news li p {
+	text-align: left;
 }
 
 ul.news li .ctime {
