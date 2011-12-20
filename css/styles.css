@@ -444,6 +444,7 @@ ul.books > li .price {
 .init ul.news {
 	overflow: auto;
 	border-left: 1px solid #CFCDBA;
+	height: 330px;
 }
 
 .init ul.news li {
