@@ -450,7 +450,7 @@ ul.books > li .price {
 	width: auto;
 	float: none;
 	margin-left: 10px;
-	text-align: center;
+	text-align: left;
 }
 
 .init ul.news li img {
