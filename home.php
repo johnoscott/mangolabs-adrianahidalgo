@@ -172,18 +172,7 @@ $sections = array(
 		'alias' => 'Noticias',
 		'url' => 'noticias/',
 		'control' => 'noticias.php',
-		'sub' => array(
-			'2011' => array(
-				'alias' => '2011',
-				'url' => 'noticias/2011/',
-				'control' => 'noticias.php'
-			),
-			'2010' => array(
-				'alias' => '2010',
-				'url' => 'noticias/2010/',
-				'control' => 'noticias.php'
-			)
-		)
+		'sub' => array()
 	),
 	'institucional' => array(
 		'alias' => 'Institucional',
@@ -212,6 +201,12 @@ $sections = array(
 	),
 );
 
+for ($i = 2005; $i <= date("Y"); $i++) {
+	$sections['noticias']['sub'][$i] = array
+				'alias' => $i,
+				'url' => 'noticias/'.$i.'/',
+				'control' => 'noticias.php'
+	);
 
 
 
