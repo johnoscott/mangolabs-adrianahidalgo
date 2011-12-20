@@ -34,7 +34,7 @@ a {
 	cursor: pointer;
 }
 
-a:hover, a:active {
+a:link, a:hover, a:active {
 	color: #d2232a;
 	text-decoration: underline;
 }
