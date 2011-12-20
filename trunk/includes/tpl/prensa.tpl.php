@@ -33,7 +33,7 @@
 		<? elseif ($prensas): ?>
 			<ul class="news equal">
 				<? foreach($prensas as $prensa): ?>
-					<li>
+					<li style="height: 80px;">
 						<a href="/web/prensa/institucional/<?=$prensa['id_prensa']?>">
 							<img src="<?=$prensa['imagen']?>">
 							<p class="ctime"><?=htmlentities($prensa['emisor'])?> - <?=htmlentities($prensa['medio'])?></p>
