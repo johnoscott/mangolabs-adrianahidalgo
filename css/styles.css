@@ -519,7 +519,8 @@ ul.news li {
 }
 
 ul.news li img {
-	width: 160px;
+	height: 118px;
+	width: auto;
 	background: #DDD;
 }
 
