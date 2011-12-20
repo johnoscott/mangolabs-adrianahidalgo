@@ -201,8 +201,8 @@ $sections = array(
 	),
 );
 
-for ($i = 2005; $i <= date("Y"); $i++) {
-	$sections['noticias']['sub'][$i] = array
+for ($i = date("Y"); $i >= 2005; $i--) 
+	$sections['noticias']['sub'][$i] = array (
 				'alias' => $i,
 				'url' => 'noticias/'.$i.'/',
 				'control' => 'noticias.php'
