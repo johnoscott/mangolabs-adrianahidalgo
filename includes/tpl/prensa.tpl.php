@@ -34,7 +34,7 @@
 			<ul class="news equal">
 				<? foreach($prensas as $prensa): ?>
 					<li>
-						<a href="/prensa/institucional/<?=$prensa['id_prensa']?>">
+						<a href="/web/prensa/institucional/<?=$prensa['id_prensa']?>">
 							<img src="<?=$prensa['imagen']?>">
 							<p class="ctime"><?=htmlentities($prensa['emisor'])?> - <?=htmlentities($prensa['medio'])?></p>
 							<p class="title"><?=htmlentities(substr($prensa['comentario'], 0, 17))?>...</p>
