@@ -703,6 +703,9 @@ ul.news li .title {
 /* Pipala */
 
 
+a:hover, a:active {
+	color: #D2232A;
+}
 
 .pipala a:hover, a:active {
 	color: #00A08C;
