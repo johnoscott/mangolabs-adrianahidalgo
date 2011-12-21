@@ -310,6 +310,7 @@ pre {
     padding: 1px 6px;
     width: 100px;
 	text-transform: uppercase;
+	visibility: hidden;
 }
 
 .toolbar .cart .bag {
