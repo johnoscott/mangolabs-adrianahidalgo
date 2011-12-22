@@ -455,7 +455,7 @@ ul.books > li .price {
 }
 
 .init ul.news li img {
-	height: 118px;
+	height: 78px;
 	width: auto;
 }
 
@@ -466,6 +466,7 @@ ul.books > li .price {
 	font-size: 13px;
 	text-transform: none;
 	font-weight: normal;
+	line-height: 16px;
 }
 
 .init ul.news li .ctime {
