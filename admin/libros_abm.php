@@ -174,6 +174,12 @@
 
 							<!-- text -->
 							<li>
+								<p><label for="form-paginas">P&aacute;ginas</label></p>
+								<p><input type="text" id="form-paginas" name="data[<?=$config['modulo']?>][paginas]" value="<?=$row['paginas']?>"/></p>
+							</li>
+
+							<!-- text -->
+							<li>
 								<p><label for="form-isbn">ISBN</label></p>
 								<p><input type="text" id="form-isbn" name="data[<?=$config['modulo']?>][isbn]" value="<?=$row['isbn']?>"/></p>
 							</li>
