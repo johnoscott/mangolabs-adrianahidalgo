@@ -34,7 +34,7 @@ a {
 	cursor: pointer;
 }
 
-a:hover, a:active {
+a:hover {
 	color: #d2232a;
 	text-decoration: underline;
 }
@@ -705,11 +705,11 @@ ul.news li .title {
 /* Pipala */
 
 
-a:hover, a:active {
+a:hover {
 	color: #D2232A;
 }
 
-.pipala a:hover, a:active {
+.pipala a:hover {
 	color: #00A08C;
 }
 
