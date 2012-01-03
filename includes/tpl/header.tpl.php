@@ -53,7 +53,7 @@
 				<!--<a href="#">ENGLISH</a> | -->
 				<a href="/web/contacto/">CONTACTO</a>
 			</div>
-			<div class="cart">
+			<div class="cart" style="visibility: hidden;">
 				<div class="left">
 					<a href="/web/shop/items/">Mis compras</a>
 					<a href="/web/shop/checkout/">Checkout</a>
