@@ -30,7 +30,7 @@ $admin = array (
 		'libros' 		=> '/admin/libros/',
 		'prensa' 		=> '/admin/prensa/',
 		'generos' 		=> '/admin/generos/',
-		'novedades' 	=> '/admin/novedades/',
+		'noticias' 	=> '/admin/novedades/',
 	),
 );
 

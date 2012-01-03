@@ -49,7 +49,10 @@
 	
 	<div class="toolbar">
 		<form id="form-search" action="/web/busqueda/titulo/" method="post">
-			<div>ENGLISH | MAPA DEL SITIO | <a href="/web/contacto/">CONTACTO</a></div>
+			<div style="text-align: right;">
+				<!--<a href="#">ENGLISH</a> | -->
+				<a href="/web/contacto/">CONTACTO</a>
+			</div>
 			<div class="cart">
 				<div class="left">
 					<a href="/web/shop/items/">Mis compras</a>

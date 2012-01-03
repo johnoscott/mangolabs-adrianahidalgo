@@ -15,7 +15,7 @@ class Libros extends Core {
 		'rpp' => 20000000, // Resultados por pagina 
 		'filtros' => array(), // Filtros para la funcion listar
 		'page' => 1, // Numero de pagina por defecto
-		'order' => array('l.titulo', 'DESC') // Ordenamiento de listar() con el tipo de ordenamiento (opcional)
+		'order' => array('l.titulo', 'ASC') // Ordenamiento de listar() con el tipo de ordenamiento (opcional)
 	);
 	private $count = 0;
 	private $paginas = 0;
