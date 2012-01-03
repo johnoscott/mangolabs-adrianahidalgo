@@ -5,7 +5,7 @@
 	}
 
 	$config = array (
-		'title' 	=> 'Novedades',
+		'title' 	=> 'Noticias',
 		'modulo' 	=> 'novedades',
 		'key'		=> 'id_novedad',
 	);
