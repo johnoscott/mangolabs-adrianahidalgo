@@ -1,6 +1,7 @@
 
 <? if ($pipala): ?>
 
+<!--
 <script language="JavaScript" src="/js/flash.js"></script>
 <script language="JavaScript">
 	function toggleVisibility(demo){
@@ -14,14 +15,10 @@
 </script>
 
 <div class="animacion" id="demo">
-<script>CreaSwf('/img/pipala.swf','960','800','');</script>
-<!--
-	<object type="application/x-shockwave-flash" data="/img/pipala.swf" width="960" height="800" wmode="transparent">
-		<param name="movie" value="/img/pipala.swf"/>
-		<param name="wmode" value="transparent"/>
-	</object>
--->
+<script>CreaSwf('/img/pipala2.swf','960','800','');</script>
+
 </div>
+-->
 
 <? endif; ?>
 
