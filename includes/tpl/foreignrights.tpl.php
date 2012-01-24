@@ -6,8 +6,9 @@
 	<div class="main foreignrights">
 
 
-		<p>You will find here the authors´ books whose translation rights are handled by Adriana Hidalgo editora.<br/>
-		For further information, please contact the editors at <a href="info@adrianahidalgo.com">info@adrianahidalgo.com</a></p>
+		<p>You will find here the authors' books whose translation rights are handled by Adriana Hidalgo editora.</p>
+
+		<p>For further information, please contact the editors at <a href="info@adrianahidalgo.com">info@adrianahidalgo.com</a></p>
 
 		<p><h2>Listado de autores para Foreign Rights</h2></p>
 
@@ -31,7 +32,7 @@
 			<li>Costa, Flavia - <span class="title">Las anfibias</span></li>
 			<li>Damiani, Marcelo - <span class="title">El oficio de sobrevivir, El sentido de la vida</span></li>
 			<li>Di Benedetto, Antonio - Los suicidas, El silenciero, Zama, Sombras, nada m&aacute;s, El pent&aacute;gono, Aballay, Cuentos completos, Mundo animal / El cari&ntilde;o de los tontos, Absurdos, Cuentos claros</span></li>
-			<li>di Giorgio, Marosa - <span class="title">Los papeles salvajes</span></li>
+			<li>Di Giorgio, Marosa - <span class="title">Los papeles salvajes</span></li>
 			<li>Dim&oacute;pulos, Mariana - <span class="title">Cada despedida</span></li>
 			<li>Di Paola, Jorge - <span class="title">El arte del espect&aacute;culo</span></li>
 			<li>Di Paola, Jorge y Jacoby, Roberto - <span class="title">Moncada</span></li>
@@ -63,7 +64,7 @@
 			<li>Rodr&iacute;guez, Cristian - <span class="title">Madrugada negra</span></li>
 			<li>Rosenzweig, Franz - <span class="title">El nuevo pensamiento</span></li>
 			<li>Samoilovich, Daniel - <span class="title">El despertar de Samoilo</span></li>
-			<li>de Soiza Reilly, Juan Jos&eacute; - <span class="title">La ciudad de los locos </span></li>
+			<li>De Soiza Reilly, Juan Jos&eacute; - <span class="title">La ciudad de los locos </span></li>
 			<li>Steimberg, Alicia - <span class="title">Vidas y vueltas</span></li>
 			<li>Steimberg, Oscar - <span class="title">Cuerpo sin armaz&oacute;n</span></li>
 			<li>Spregelburd, Rafael - <span class="title">Heptalog&iacute;a de Hyeronims Bosch I</span></li>
