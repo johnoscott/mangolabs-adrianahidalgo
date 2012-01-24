@@ -22,10 +22,8 @@
 
 
 		<div class="pipalablog">
-			<a href="http://ahpipala.blogspot.com">
-				<div class="animacion" id="demo"><script>CreaSwf('/img/pipala2.swf','160','300','');</script></div>
+			<div id="demo"><script>CreaSwf('/img/pipala2.swf','160','300','');</script></div>
 <!--				<img src="/img/pipalablog.png"/>-->
-			</a>
 		</div>
 	<? endif; ?>
 </div>
