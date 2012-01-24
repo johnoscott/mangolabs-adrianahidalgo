@@ -813,6 +813,10 @@ a:hover {
 }
 .foreignrights p {
 	font-size: 14px;
+	padding: 10px 10px 10px 0;
+}
+.foreignrights li .title {
+	font-style: italic;
 }
 .distribucion {
 	display: block;
