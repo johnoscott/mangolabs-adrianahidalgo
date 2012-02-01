@@ -14,7 +14,7 @@
 				<? if ($prensa['video']): ?>
 					<iframe width="420" height="315" src="<?=$prensa['embed']?>" frameborder="0" allowfullscreen></iframe>
 				<? else: ?>
-					<img class="new" src="<?=$prensa['imagen']?>" />
+					<img style="width: auto;" class="new" src="<?=$prensa['imagen']?>" />
 				<? endif; ?>
 
 				<div class="social">
