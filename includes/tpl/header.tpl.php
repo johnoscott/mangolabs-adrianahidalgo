@@ -50,7 +50,7 @@
 	<div class="toolbar">
 		<form id="form-search" action="/web/busqueda/titulo/" method="post">
 			<div style="text-align: right;">
-				<!--<a href="#">ENGLISH</a> | -->
+				<a href="#">ENGLISH</a> | 
 				<a href="/web/contacto/">CONTACTO</a>
 			</div>
 			<div class="cart" style="visibility: hidden;">
