@@ -1,6 +1,12 @@
 
 $(function() {
 	
+	// Leer mas en prensa
+	$('.opinion-leer-mas').bind('click', function() {
+		$('#opinion-'+$(this).attr('id_opinion')).show();
+		$(this).remove();
+	});
+
 	// Tabs
 	$('a', '[data-role="tabs"]').bind('click', function () {
 		obj = $(this);

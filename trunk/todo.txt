@@ -94,7 +94,17 @@ WHERE 1=1
 LIMIT 10000000;
 
 
+7.50
 
+Sitio
+[x] En las notas de prensa: que de cada nota asignada a un libro, muestre un fragmento, las primeras 30 palabras
+[x] Que abra el resto en un lightbox. A la tipo del lght box, bajale el tamaño, que quede como el texto de una nota normal.- (... leer mas)
+[x] Poder descargar desde la parte de "descargas" en el detalle del libro el pdf.
+[x] Quitar temporalmente "añadir a la bolsa de compras" y el precio de cada libro.
+[ ] Nota de prensa: Si hay pdf, en vez de mostrarse la foto como galería en el sitio, se abrirá el pdf.
 
+Admin
+[x] Agregar un campo más a la carga de notas de prensa que permita cargar un pdf.
+[x] Agregar un campo más a la carga de libros para permitir subir un pdf 
 
 
