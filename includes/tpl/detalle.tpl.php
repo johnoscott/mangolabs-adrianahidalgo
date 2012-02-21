@@ -89,7 +89,7 @@
 				?>
 				<div class="margin quote avenir55">
 					<p class="citation">
-					<?	if ($opinion['pdf'] && is_file(CONFIG_DOCUMENT_ROOT.$opinion['pdf'])): ?>
+					<?	if ($opinion['pdf'] && is_file(CONFIG_DOCUMENT_ROOT.''.$opinion['pdf'])): ?>
 						<a target="_blank" href="<?=$opinion['pdf']?>">&#8220;<?=$comentario?></a><?=$leermas?>
 					<? elseif ($opinion['imagen'] && is_file(CONFIG_DOCUMENT_ROOT.$opinion['imagen'])): ?>
 						<a class="ligthbox" href="<?=$opinion['imagen']?>">&#8220;<?=$comentario?>&#8221;</a><?=$leermas?>
