@@ -6,7 +6,7 @@
 				<img class="front" src="/uploads/libros/<?=$libro['imagen']?>">
 				<p class="author"><?=htmlentities($libro['autor'])?></p>
 				<p class="title"><?=htmlentities($libro['titulo'])?></p>
-				<p class="price">$ <?=$libro['precio']?> .-</p>
+				<!-- <p class="price">$ <?=$libro['precio']?> .-</p> -->
 			</a>
 		</li>
 	<? endforeach; ?>

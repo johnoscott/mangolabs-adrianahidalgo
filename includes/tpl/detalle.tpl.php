@@ -45,8 +45,8 @@
 					<h5 class="author"><?=htmlentities($libro['autor'])?></h5>
 					<h2 class="avenir85"><?=htmlentities($libro['titulo'])?></h2>
 					<div>
-						<p class="price">$ <?=$libro['precio']?> .-</p>
-						<div class="buttonbar"><button class="button">A&ntilde;adir a la bolsa de compras</button></div>
+						<!-- <p class="price">$ <?=$libro['precio']?> .-</p> -->
+						<!-- <div class="buttonbar"><button class="button">A&ntilde;adir a la bolsa de compras</button></div> -->
 						<p><?=htmlentities($libro['subtitulo'])?></p>
 						<ul>
 							<li>Colecci&oacute;n: <?=htmlentities($libro['coleccion'])?></li>
@@ -74,16 +74,29 @@
 			
 			<!-- Tab 3: Descarga -->
 			<div id="descarga" class="tab hide">
-				Descarga
+				<?=($libro['descarga'])? '<a href="/uploads/libros/'.$libro['descarga'].'">Descargar</a>' : 'No hay descargas'?>
 			</div>
 			
 			
 			
 			<!-- Tab 4: Prensa -->
 			<div id="prensa" class="tab hide">
-				<? foreach($libro['prensa'] as $opinion):?>
+				<? foreach($libro['prensa'] as $opinion):
+						$limite = 150;
+						// Limito el comentario
+						$comentario = htmlentities(substr($opinion['comentario'], 0, $limite));
+						$comentario .= '<a href="#" id_opinion="'.$opinion['id_prensa'].'" style="font-size: 0.6em;" class="opinion-leer-mas"> ..leer m&aacute;s</a><span id="opinion-'.$opinion['id_prensa'].'" style="display: none;">'.htmlentities(substr($opinion['comentario'], $limite)).'</span>';
+				?>
 				<div class="margin quote avenir55">
-					<p class="citation"><?=($opinion['imagen'] && is_file(CONFIG_DOCUMENT_ROOT.$opinion['imagen']))? '<a class="ligthbox" href="'.$opinion['imagen'].'">&#8220;'.htmlentities($opinion['comentario']).'&#8221;</a>' : '&#8220;'.htmlentities($opinion['comentario']).'&#8221;' ?></p>
+					<p class="citation">
+					<?	if ($opinion['pdf'] && is_file(CONFIG_DOCUMENT_ROOT.$opinion['pdf'])): ?>
+						<a target="_blank" href="<?=$opinion['pdf']?>">&#8220;<?=$comentario?>
+					<? elseif ($opinion['imagen'] && is_file(CONFIG_DOCUMENT_ROOT.$opinion['imagen'])): ?>
+						<a class="ligthbox" href="<?=$opinion['imagen']?>">&#8220;<?=htmlentities($comentario)?>&#8221;</a>
+					<?	else: ?>
+						&#8220;<?=$comentario?>&#8221;
+					<?	endif; ?>
+					</p>
 					<p class="talker"><?=htmlentities($opinion['emisor'])?><br><em>- <?=htmlentities($opinion['medio'])?> -</em></p>
 				</div>
 				<? endforeach; ?>
@@ -96,4 +109,5 @@
 	</div>
 
 </div>
+
 

@@ -11,7 +11,7 @@
 			<div class="detail">
 				<!-- <p class="ctime"><?=htmlentities($prensa['emisor'])?> - <?=htmlentities($prensa['medio'])?></p> -->
 				<h2><?=htmlentities($prensa['emisor'])?> - <?=htmlentities($prensa['medio'])?></h2>
-				<? if ($prensa['video']): ?>
+				<? if ($prensa['pdf']): ?>
 					<iframe width="420" height="315" src="<?=$prensa['embed']?>" frameborder="0" allowfullscreen></iframe>
 				<? else: ?>
 					<img style="width: auto;" class="new" src="<?=$prensa['imagen']?>" />

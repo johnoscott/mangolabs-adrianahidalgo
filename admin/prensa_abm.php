@@ -28,10 +28,14 @@
 				foreach ($_FILES as $file) {
 					foreach ($file['tmp_name'] as $file_table => $data2)
 						foreach ($data2 as $file_campo => $tmp_name) {
-							// Subo el archivo fisico
-							move_uploaded_file($tmp_name, CONFIG_DOCUMENT_ROOT.$path.$_POST['data'][$tabla][$config['key']].'.jpg');
-							// Actualizo el campo en la base de datos
-							$db->update($tabla, array_merge($campos, array($file_campo => $_POST['data'][$tabla][$config['key']].'.jpg')));
+							if (!empty($tmp_name)) {
+								// Obtengo la extension del archivo
+								$extension = end(explode('.', $file['name'][$file_table][$file_campo]));
+								// Subo el archivo fisico
+								move_uploaded_file($tmp_name, CONFIG_DOCUMENT_ROOT.$path.$_POST['data'][$tabla][$config['key']].'.'.$extension);
+								// Actualizo el campo en la base de datos
+								$db->update($tabla, array_merge($campos, array($file_campo => $_POST['data'][$tabla][$config['key']].'.'.$extension)));
+							}
 						}
 				}
 		}
@@ -151,6 +155,15 @@
 								<p>
 									<input type="file" id="form-imagen" name="data[<?=$config['modulo']?>][imagen]" value=""/>
 									<?=($row['imagen'])? '<a href="'.CONFIG_SITE_URL.$path.$row['imagen'].'" target="_blank">[Ver imagen actual]</a> <!--<a href="">[borrar imagen actual]</a>-->' : ''?>
+								</p>
+							</li>
+
+							<!-- file -->
+							<li>
+								<p><label for="form-imagen">PDF</label></p>
+								<p>
+									<input type="file" id="form-imagen" name="data[<?=$config['modulo']?>][pdf]" value=""/>
+									<?=($row['pdf'])? '<a href="'.CONFIG_SITE_URL.$path.$row['pdf'].'" target="_blank">[Ver pdf actual]</a> <!--<a href="">[borrar pdf actual]</a>-->' : ''?>
 								</p>
 							</li>
 
