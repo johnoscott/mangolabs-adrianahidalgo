@@ -84,17 +84,17 @@
 				<? foreach($libro['prensa'] as $opinion):
 						$limite = 150;
 						// Limito el comentario
-						$comentario = htmlentities(substr($opinion['comentario'], 0, $limite));
-						$comentario .= '<a href="#" id_opinion="'.$opinion['id_prensa'].'" style="font-size: 0.6em;" class="opinion-leer-mas"> ..leer m&aacute;s</a><span id="opinion-'.$opinion['id_prensa'].'" style="display: none;">'.htmlentities(substr($opinion['comentario'], $limite)).'</span>';
+						$comentario = htmlentities(substr($opinion['comentario'], 0, $limite)).'<span id="opinion-'.$opinion['id_prensa'].'" style="display: none;">'.htmlentities(substr($opinion['comentario'], $limite)).'</span>';
+						$leermas =  '<a href="#" id_opinion="'.$opinion['id_prensa'].'" style="font-size: 0.6em;" class="opinion-leer-mas"> ..leer m&aacute;s</a>';
 				?>
 				<div class="margin quote avenir55">
 					<p class="citation">
 					<?	if ($opinion['pdf'] && is_file(CONFIG_DOCUMENT_ROOT.$opinion['pdf'])): ?>
-						<a target="_blank" href="<?=$opinion['pdf']?>">&#8220;<?=$comentario?>
+						<a target="_blank" href="<?=$opinion['pdf']?>">&#8220;<?=$comentario?></a><?=$leermas?>
 					<? elseif ($opinion['imagen'] && is_file(CONFIG_DOCUMENT_ROOT.$opinion['imagen'])): ?>
-						<a class="ligthbox" href="<?=$opinion['imagen']?>">&#8220;<?=$comentario?>&#8221;</a>
+						<a class="ligthbox" href="<?=$opinion['imagen']?>">&#8220;<?=$comentario?>&#8221;</a><?=$leermas?>
 					<?	else: ?>
-						&#8220;<?=$comentario?>&#8221;
+						&#8220;<?=$comentario?>&#8221;<?=$leermas?>
 					<?	endif; ?>
 					</p>
 					<p class="talker"><?=htmlentities($opinion['emisor'])?><br><em>- <?=$opinion['medio']?> -</em></p>
