@@ -92,12 +92,12 @@
 					<?	if ($opinion['pdf'] && is_file(CONFIG_DOCUMENT_ROOT.$opinion['pdf'])): ?>
 						<a target="_blank" href="<?=$opinion['pdf']?>">&#8220;<?=$comentario?>
 					<? elseif ($opinion['imagen'] && is_file(CONFIG_DOCUMENT_ROOT.$opinion['imagen'])): ?>
-						<a class="ligthbox" href="<?=$opinion['imagen']?>">&#8220;<?=htmlentities($comentario)?>&#8221;</a>
+						<a class="ligthbox" href="<?=$opinion['imagen']?>">&#8220;<?=$comentario?>&#8221;</a>
 					<?	else: ?>
 						&#8220;<?=$comentario?>&#8221;
 					<?	endif; ?>
 					</p>
-					<p class="talker"><?=htmlentities($opinion['emisor'])?><br><em>- <?=htmlentities($opinion['medio'])?> -</em></p>
+					<p class="talker"><?=htmlentities($opinion['emisor'])?><br><em>- <?=$opinion['medio']?> -</em></p>
 				</div>
 				<? endforeach; ?>
 			</div>
