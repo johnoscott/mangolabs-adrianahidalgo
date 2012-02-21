@@ -2,7 +2,8 @@
 $(function() {
 	
 	// Leer mas en prensa
-	$('.opinion-leer-mas').bind('click', function() {
+	$('.opinion-leer-mas').bind('click', function(e) {
+		e.preventDefault();		
 		$('#opinion-'+$(this).attr('id_opinion')).show();
 		$(this).remove();
 	});
