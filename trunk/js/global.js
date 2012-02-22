@@ -1,6 +1,8 @@
 
 $(function() {
 	
+	$('[data-modal]').modal();
+
 	// Leer mas en prensa
 	$('.opinion-leer-mas').live('click', function(ev) {
 		ev.preventDefault();		
