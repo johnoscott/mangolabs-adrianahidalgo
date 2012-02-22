@@ -1,11 +1,5 @@
 <? include('includes/loader.inc.php');
 
-$Usuario = new Usuario();
-
-// Si no esta logueado, aborto
-if (!$Usuario->logged())
-	die('No estas validado');
-
 // Array de clases y metodos privados
 $private = array(
 	'ez_sql' => array(),
