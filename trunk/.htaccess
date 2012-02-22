@@ -29,6 +29,9 @@ Rewriterule ^(php|ajax|xml)/class/([^/]+)/([^/]+)/?(.*)?$ /ajax.php?type=$1&clas
 
 #### ESPECIAL
 
+# Contenido de una nota de prensa -> /prensa/get/[ID]
+Rewriterule ^prensa/get/([0-9]+)/?$ /prensa.php?id=$1
+
 # Caso Short URL -> /caso/[ID]
 Rewriterule ^web/libro/([0-9]+)/?$ /home.php?tab=catalogo&id=$1&short=detalle
 
