@@ -16,6 +16,7 @@
 		max-width: 50%;
 		height: 500px;
 		overflow: auto;
+		padding: 20px;
 	}
 
 	.modal .m-overlay {
@@ -53,7 +54,8 @@
 	.modal a.m-close {
 		height: 8px;
 		width: 8px;
-		background: url('/images/icon/closelabel.png') no-repeat;
+		background: url('/img/lightbox/lightbox-btn-close.gif') no-repeat;
+		/*background: url('/images/icon/closelabel.png') no-repeat;*/
 		opacity: 0.5;
 		margin: 0.5em 0.5em 0 0;
 		cursor: pointer;
