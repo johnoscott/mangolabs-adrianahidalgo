@@ -2,11 +2,6 @@
 
 /**************************/
 
-	.modal {
-		height: 500px;
-		overflow: auto;
-	}
-
 	.modal .m-box {
 		position: absolute;
 		left: 50%;
@@ -19,6 +14,8 @@
 		box-shadow: 0 0 20px black;
 		background: white;
 		max-width: 50%;
+		height: 500px;
+		overflow: auto;
 	}
 
 	.modal .m-overlay {
