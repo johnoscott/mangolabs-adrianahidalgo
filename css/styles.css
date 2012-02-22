@@ -685,6 +685,13 @@ ul.news li .title {
 	margin-top: 30px;
 }
 
+.detail .opinion-leer-mas a {
+	color: #D2232A; 
+}
+.pipala .detail .opinion-leer-mas a {
+	color: #00A08C; 
+}
+
 .tab {
 	margin-top: 20px;
 }
