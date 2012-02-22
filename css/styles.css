@@ -685,10 +685,10 @@ ul.news li .title {
 	margin-top: 30px;
 }
 
-.detail .opinion-leer-mas a, .detail .opinion-leer-menos a {
+.detail .opinion-leer-mas, .detail .opinion-leer-menos {
 	color: #D2232A; 
 }
-.pipala .detail .opinion-leer-mas a, .pipala .detail .opinion-leer-menos a {
+.pipala .detail .opinion-leer-mas, .pipala .detail .opinion-leer-menos {
 	color: #00A08C; 
 }
 
