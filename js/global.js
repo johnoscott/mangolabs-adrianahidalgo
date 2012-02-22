@@ -5,6 +5,14 @@ $(function() {
 	$('.opinion-leer-mas').live('click', function(ev) {
 		ev.preventDefault();		
 		$('#opinion-'+$(this).attr('id_opinion')).show();
+		$(this).hide();
+		$('#opinion-leer-mas-'+$(this).attr('id_opinion')).show();
+	});
+
+	// Leer menos en prensa
+	$('.opinion-leer-menos').live('click', function(ev) {
+		ev.preventDefault();		
+		$('#opinion-'+$(this).attr('id_opinion')).hide();
 		$(this).remove();
 	});
 
