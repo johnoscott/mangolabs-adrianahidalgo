@@ -88,7 +88,7 @@
 						$leermas =  '<a href="#" id_opinion="'.$opinion['id_prensa'].'" style="font-size: 10px;" class="opinion-leer-mas" id="opinion-leer-mas-'.$opinion['id_prensa'].'"> VER M&Aacute;S</a>';
 						$leermas .=  '<a href="#" id_opinion="'.$opinion['id_prensa'].'" style="font-size: 10px; display: none;" class="opinion-leer-menos" id="opinion-leer-menos-'.$opinion['id_prensa'].'"> OCULTAR</a>';
 
-						$leermas =  '<a href="/prensa/get/'.$opinion['id_prensa'].'" data-modal="hola" style="font-size: 10px;" > VER M&Aacute;S</a>';
+						$leermas =  '<a href="/prensa/get/'.$opinion['id_prensa'].'" rel="/prensa/get/'.$opinion['id_prensa'].'" data-modal="hola" style="font-size: 10px;" > VER M&Aacute;S</a>';
 				?>
 				<div class="margin quote avenir55">
 					<p class="citation">
