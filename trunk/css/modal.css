@@ -1,0 +1,71 @@
+
+
+/**************************/
+
+
+
+	.modal .m-box {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		z-index: 1100;
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		border-radius: 6px;
+		overflow: hidden;
+		box-shadow: 0 0 20px black;
+		background: white;
+		max-width: 50%;
+	}
+
+	.modal .m-overlay {
+		background: url(/images/icon/ajax-loader.gif) no-repeat center center #000000;
+		opacity: 0.5;
+		bottom: 0;
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 1000;
+	}
+
+	.modal .m-message {
+		background: #FFF;
+		-moz-border-radius: 4px 4px 0 0;
+		-webkit-border-radius: 4px 4px 0 0;
+		border-radius: 4px 4px 0 0;
+		padding: 1.5em;
+		border-bottom: 1px solid #BBB;
+		overflow-y: auto;
+		max-height: 400px;
+	}
+
+	.modal .m-controls {
+		background: #DDDDDD;
+		border-top: 1px solid #FFF;
+		padding: 1em;
+		text-align: right;
+		-moz-border-radius: 0 0 4px 4px;
+		-webkit-border-radius: 0 0 4px 4px;
+		border-radius: 0 0 4px 4px;
+	}
+
+	.modal a.m-close {
+		height: 8px;
+		width: 8px;
+		background: url('/images/icon/closelabel.png') no-repeat;
+		opacity: 0.5;
+		margin: 0.5em 0.5em 0 0;
+		cursor: pointer;
+		position: absolute;
+		right: 0;
+	}
+
+	.modal a:hover.m-close {
+		opacity: 1;
+	}
+
+	.modal a.m-close span {
+		display: none;
+	}
+	

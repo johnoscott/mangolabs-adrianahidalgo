@@ -12,6 +12,7 @@
 <!-- Reset     --> 				<link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen" charset="utf-8" />
 <!-- Styles    --> 				<link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen" charset="utf-8" />
 <!-- Styles    --> 				<link rel="stylesheet" href="/css/jquery.lightbox-0.5.css" type="text/css" media="screen" charset="utf-8" />
+<!-- Styles    --> 				<link rel="stylesheet" href="/css/modal.css" type="text/css" media="screen" charset="utf-8" />
 
 
 <!-- FONTS
