@@ -1,7 +1,12 @@
 <? include('includes/loader.inc.php'); 
 
+// Instancio prensa
 $Prensa = new Prensa();
 
-echo $Prensa->get($_GET['id']);
+// Obtengo la nota de prensa
+$prensa = $Prensa->get($_GET['id']);
+
+// Imprimo el texto
+echo htmlentities($prensa['comentario']);
 
 ?>
