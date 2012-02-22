@@ -86,7 +86,7 @@
 						// Limito el comentario
 						$comentario = htmlentities(substr($opinion['comentario'], 0, $limite)).'<span id="opinion-'.$opinion['id_prensa'].'" style="display: none;">'.htmlentities(substr($opinion['comentario'], $limite)).'</span>';
 						$leermas =  '<a href="#" id_opinion="'.$opinion['id_prensa'].'" style="font-size: 10px;" class="opinion-leer-mas" id="opinion-leer-mas-'.$opinion['id_prensa'].'"> ..VER M&Aacute;S</a>';
-						$leermas .=  '<a href="#" id_opinion="'.$opinion['id_prensa'].'" style="color: #D2232A; font-size: 10px; display: none;" class="opinion-leer-menos" id="opinion-leer-menos-'.$opinion['id_prensa'].'"> OCULTAR</a>';
+						$leermas .=  '<a href="#" id_opinion="'.$opinion['id_prensa'].'" style="font-size: 10px; display: none;" class="opinion-leer-menos" id="opinion-leer-menos-'.$opinion['id_prensa'].'"> OCULTAR</a>';
 				?>
 				<div class="margin quote avenir55">
 					<p class="citation">
