@@ -15,7 +15,7 @@
 			<li>Email: <a href="mailto:<?=$distribuidor['mail']?>"><?=$distribuidor['mail']?></a></li>
 -->
 			<?	for  ($class = "selected"; $dist = current($distribuidor); next($distribuidor), $class=""): ?>
-			<li class="<?=$class?>"><?=iconv('iso-8859-1', 'utf-8', $dist)?></li>
+			<li class="<?=$class?>"><?=iconv('utf-8', 'iso-8859-1', $dist)?></li>
 			<?	endfor; ?>
 
 		</ul>
