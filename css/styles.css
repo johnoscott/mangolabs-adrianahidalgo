@@ -735,6 +735,9 @@ a:hover {
 }
 
 .pipala .detail ul.menu li a.selected {
+	border-top: 2px solid #00A08C;
+	border-left: 8px solid #00A08C;
+	border-bottom: 8px solid #f1eae2;
 	background: #00A08C;
 	border-color: #00A08C -moz-use-text-color #F1EAE2 #00A08C;
 }
