@@ -25,6 +25,18 @@ $distribuidores = array (
 		'Fax: (005411) 4381-1760', 
 		'e-mail: <a href="mailto: ventas@tusquets.com.ar">ventas@tusquets.com.ar</a>', 
 	),
+	'brasil' => array (
+		'Marcelo Duvidovich', 
+		'Sur distribuidora Brasil', 
+		'<a href="http://www.surlivro.com.br" target="_blank">www.surlivro.com.br</a>', 
+		'Teléfono: (5548) 32332115', 
+	),
+	'puertorico' => array (
+		'Librería La Tertulia', 
+		'Av. Ponce de León 1002', 
+		'Río Piedras - San Juan', 
+		'Puerto Rico',
+	),
 	'espana' => array (
 		'UDL - Unidad para la Distribución de Libros S.L.', 
 		'Nacional II Salida 23, Ctra. M-300 Km. 26,5', 
