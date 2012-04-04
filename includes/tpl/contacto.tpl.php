@@ -4,7 +4,7 @@
 		<ul class="list">
 			<li class="selected">CONTACTO</li>
 		</ul>
-		<div class="pastilla"><a href="catalogo.pdf">Ver cat&aacute;logo (PDF)</a></div>
+		<div class="pastilla"><a href="/catalogo.pdf">Ver cat&aacute;logo (PDF)</a></div>
 	</div>
 	
 	<div class="main distribucion" style="display: block; float: left; margin-left: 0; width: 500px;">
