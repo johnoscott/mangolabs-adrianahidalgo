@@ -3,7 +3,7 @@
 error_reporting(E_ERROR | E_PARSE);
 //error_reporting(E_ALL);
 
-header("Content-Type: text/html; charset=utf-8");
+header("Content-Type: text/html; charset=iso-8859-1");
 
 // Incluyo el archivo de configuracion
 include_once(dirname(__FILE__).'/config.inc.php');
