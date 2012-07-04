@@ -3,6 +3,9 @@
 #DirectoryIndex home.php
 DirectoryIndex countries.php
 
+Options -MultiViews
+
+
 RewriteEngine on
 RewriteBase /
 
